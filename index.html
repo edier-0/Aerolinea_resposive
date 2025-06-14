@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flynova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container_logo">
+            <a href="#inicio"><img id="inicio" class="logo_flynova" src="Assets/compartidos/Logos/logo flynova gris.png"
+                    alt="Logo flynova"></a>
+        </div>
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu" class="mostrar-menu">&#8801</label>
+        <div class="fondo-blur"></div>
+        <nav class="menu_navegacion">
+            <a href="#">Mascotas</a>
+            <span class="separacion">|</span>
+            <a href="#">Ranking</a>
+            <span class="separacion">|</span>
+            <a href="#">Paquetes</a>
+            <span class="separacion">|</span>
+            <a href="#">Servicios</a>
+            <span class="separacion">|</span>
+            <a href="#">Registrarse</a>
+            <label for="check-menu" class="ocultar-menu">&#215</label>
+        </nav>
+        <div class="container_botones_header">
+            <div class="boton_moneda">
+                <img src="Assets/compartidos/imagenes/circulo_colombia.png" alt="imagen de bandera del pais">
+                COP - $
+            </div>
+            <button class="boton_iniciar_sesion">
+                <p>Inisiar sesión</p>
+                <img class="icono_user" src="Assets/compartidos/iconos/user.svg" alt="icono de user">
+            </button>
+        </div>
+    </header>
+    <div class="separador_del_header_al_fondo"></div>
+    <div class="container_fondo">
+        <img class="fondo_header" src="Assets/index/fondos/fondo_index.svg" alt="foto en la playa">
+        <form action="" class="formulario-de-vuelo">
+            <div class="container-radios-check">
+                <div class="container-radio-ida-y-vuelta">
+                    <div class="container-ida-y-vuelta">
+                        <input type="radio" name="seleccion-ida-vuelta" id="ida-vuelta">
+                        <label for="ida-vuelta">Ida y vuelta</label>
+                    </div>
+                    <div class="container-solo-ida">
+                        <input type="radio" name="seleccion-ida-vuelta" id="solo-ida">
+                        <label for="solo-ida">Solo ida</label>
+                    </div>
+                </div>
+                <div class="container-check">
+                    <input type="checkbox" name="" id="check-reserva-con-puntos">
+                    <label for="check-reserva-con-puntos">Reserva con puntos Fly</label>
+                </div>
+            </div>
+            <div class="container-datos-de-vuelo">
+                <div class="container-inputs-ciudades">
+                    <div class="container-input">
+                        <img src="Assets/compartidos/iconos/avion despegando1.svg" alt="">
+                        <input id="input-origen" list="ciudades">
+                        <datalist id="ciudades">
+                            <option value="Medellín"></option>
+                            <option value="Pereira"></option>
+                            <option value="Bogotá"></option>
+                        </datalist>
+                    </div>
+                    <span>|</span>
+                    <div class="container-input input-vuelta">
+                        <img src="Assets/compartidos/iconos/Avion aterrizando.svg" alt="">
+                        <input id="input-destino" list="ciudades">
+                    </div>
+                </div>
+                <div class="container-inputs-fechas">
+                    <input type="date" class="input-fecha-ida">
+                    <span>|</span>
+                    <input type="date" class="input-fecha-vuelta">
+                </div>
+                <div class="container-cantidad-personas">
+                    <img src="Assets/compartidos/iconos/user-add.svg" alt="icono añadir pasajero" width="24px">
+                    <input class="input-personas" type="number" min="1" max="10">
+                </div>
+                <button class="btn-buscar">Buscar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
