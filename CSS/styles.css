@@ -1,0 +1,481 @@
+* {
+    /* estilos para resetear la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* para scroll suave entre secciones*/
+    font-family: Montserrat, sans-serif;
+    /* tipo de letra de la pagina */
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.header {
+    /* Estilos del header de la pagina */
+    background-color: #172D43;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo_flynova {
+    /* tamaño del logo del header */
+    width: 250px;
+}
+
+.icono_user {
+    /* tamaño del icono de user */
+    height: 24px;
+}
+
+.menu_navegacion {
+    /* estilos del menu de navegacion entre las secciones */
+    list-style: none;
+    align-items: center;
+    color: white;
+
+    a {
+        /* estilos de las secciones de los encabezados */
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0 1.5vw;
+        color: white;
+        font-weight: 500;
+        position: relative;
+        /* posicion relativa para poner delineado despues
+        con after */
+        transition: 0.5s;
+    }
+}
+
+.menu_navegacion a::after {
+    /* Se le agrega linea debajo de los nombres de las secciones
+    con after y se oculta por defecto */
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.menu_navegacion a:hover::after {
+    /* se aparece la linea debajo de los nombres de las secciones
+    con hover */
+    transform: scaleX(1);
+}
+
+.container_botones_header {
+    /* contenedor de los botones de moneda y de iniciar
+    sesion */
+    display: flex;
+    align-items: center;
+
+    .boton_moneda {
+        /* estilos del boton moneda */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        width: 140px;
+    }
+
+    .boton_iniciar_sesion {
+        /* estilos del boton iniciar sesion */
+        display: flex;
+        align-items: center;
+        width: 165px;
+        height: 45px;
+        gap: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        p {
+            width: 120px;
+        }
+    }
+}
+
+.boton_iniciar_sesion:hover {
+    /* estilos de cuando se hace hocer en el boton de 
+    iniciar sesion */
+    background-color: transparent;
+    filter: invert(100%);
+    border: 2px solid black;
+    transform: translateY(-3px);
+    box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.boton_iniciar_sesion:active {
+    /* se reduce el la escala del boton cuando se le 
+    da click para dar la sensacion que se dio click */
+    scale: 0.95;
+}
+
+.separador_del_header_al_fondo {
+    width: 100%;
+    height: 80px;
+}
+
+/* tamaño del contendor del sondo y la imagen de fondo */
+.container_fondo,
+.fondo_header {
+    width: 100%;
+}
+
+/* posicion relativa para ubicar el formulario de los vuelos */
+.container_fondo {
+    position: relative;
+}
+
+/* Estilos de los label que son estilos amburguesa y equis de cerrrar para 
+resposive */
+.mostrar-menu,
+.ocultar-menu {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu {
+    position: absolute;
+    right: 40px;
+    z-index: 1;
+}
+
+/* hover para los label del resposive */
+.mostrar-menu:hover,
+.ocultar-menu:hover {
+    color: #6cc091;
+    scale: 1.1;
+}
+
+/* se oculta el check */
+#check-menu {
+    display: none;
+}
+
+/* efecto de desenfoque al fondo cuando salga una ventana */
+.fondo-blur{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    display: none;
+    transition: 0.8s;
+}
+
+/* estilo y posicion del formulario de vuelo */
+.formulario-de-vuelo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 83%;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+/* contenedor de los inputs tipo radio y los label*/
+.container-radios-check {
+    margin: 20px 0 20px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* contenedor de los contenderes de los inputs tipo radio con sus label */
+.container-radio-ida-y-vuelta {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 1.1rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 500;
+    color: #162916;
+
+    /* estilos de los inputs tipo radio */
+    input {
+        scale: 1.3;
+        margin-right: 3px;
+        accent-color: #144d86;
+    }
+}
+
+/* contenedor del input tipo check con el label */
+.container-check {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #162916;
+
+    /* estilos del input tipo check */
+    input {
+        scale: 1.3;
+        margin-right: 7px;
+        accent-color: #144d86;
+    }
+}
+
+/* estilos del contenedor de los inputs tipo text, date, number
+y boton de buscar */
+.container-datos-de-vuelo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 0 0 0.7rem 0.7rem;
+    border: 1px solid #d3d3d3;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+/* estilos de la linea que esta entre los dos inputs de busque de ciudades */
+    span {
+        z-index: 1;
+        font-size: 1.5rem;
+        color: #d3d3d3;
+    }
+}
+
+/* estilos del contenedor que contiene los dos inputs de ciudades para
+mantener los inputs juntos */
+.container-inputs-ciudades {
+    display: flex;
+    align-items: center;
+}
+
+/* contenedor de los inputs de ciudades con posicion relativa
+para acomodar los iconos de aviones dentro */
+.container-input,
+.container-cantidad-personas {
+    position: relative;
+
+    /* estilos de los iconos de aviones dentro de los inputs */
+    img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+}
+
+/* estilos del input de origen */
+#input-origen {
+    padding: 5px 10px 5px 45px;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    width: 300px;
+    border: 2px solid #d3d3d3;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border-right: none;
+}
+
+/* se le quita el a los inputs para cuando se seleccionen 
+no salga lineas oscuras en los bordes */
+#input-origen:focus,
+#input-destino {
+    outline: none;
+}
+
+/* estilos del input de destino */
+#input-destino {
+    padding: 5px 10px 5px 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    width: 300px;
+    border: 2px solid #d3d3d3;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border-left: none;
+    margin-left: -7px;
+}
+
+/* contenedor de los inputs de fecha para mantener una linea entre ellos */
+.container-inputs-fechas{
+    display: flex;
+    align-items: center;
+}
+
+/* estilos del input de fecha de ida */
+.input-fecha-ida{
+    height: 40px;
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #d3d3d3;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border-right: none;
+}
+
+/* estilos del input de fecha de vuelta */
+.input-fecha-vuelta{
+    height: 40px;
+    width: 200px;
+    padding: 5px 10px 5px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #d3d3d3;
+    margin-left: -8px;
+    border-left: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* estilos del input de cantidad de personas */
+.input-personas{
+    height: 40px;
+    width: 85px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid #d3d3d3;
+    border-radius: 0.5rem;
+    padding: 5px 5px 5px 42px;
+}
+
+/* estilos del boton de buscar */
+.btn-buscar{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #172D43;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-buscar:hover{
+    scale: 1.1;
+}
+
+.btn-buscar:active{
+    scale: 1;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1350px) {
+
+    /* HEADER */
+    .mostrar-menu,
+    .ocultar-menu {
+        /* para que aparezcan los elementos de la hamburquesa */
+        display: block;
+    }
+
+    /* se le hace espacio al label hamburguesa se puso en posición 
+        absoluta para poder posicionarlo bien */
+    .header {
+        padding: 0 80px 0 40px;
+    }
+
+    /* la separacion entre los nombres de las secciones se elimina */
+    .separacion {
+        display: none;
+    }
+
+    .menu_navegacion a:hover::after {
+        /* se aparece la linea debajo de los nombres de las secciones
+    con hover */
+        display: none;
+    }
+
+    .menu_navegacion a:hover {
+        scale: 1.1;
+    }
+
+    /* estilos del menu de navegacion para la nueva 
+        interfaz */
+    .menu_navegacion {
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background-color: #172D43;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu_navegacion::after {
+        content: '';
+        display: block;
+        width: 250px;
+        height: 60px;
+        background-image: url(../Assets/compartidos/Logos/logo\ flynova\ gris.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    /* estilos de los nombres de las secciones en el nuevo menu */
+    .menu_navegacion a {
+        display: block;
+        width: fit-content;
+        padding: 20px 20px 20px 40px;
+    }
+
+    .menu_navegacion{
+        padding-top: 100px;
+    }
+
+    /* posicion de la equis para cerrar el menu de hamburguesa */
+    .ocultar-menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    /* evento para cuando se le de al menu o a la equis para cerrarlo */
+    #check-menu:checked~.menu_navegacion {
+        
+        right: 0%;
+    }
+
+    #check-menu:checked~.fondo-blur {
+        display: block;
+    }
+
+}
