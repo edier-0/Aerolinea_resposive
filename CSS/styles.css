@@ -117,7 +117,33 @@ body {
     }
 }
 
-.boton_iniciar_sesion:hover {
+/* Boton de iniciar sesion para movil, 
+este va dentro del menu de hamburquesa */
+.boton_iniciar_sesion_movil {
+    display: flex;
+    align-items: center;
+
+    width: 165px;
+    height: 45px;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    display: none;
+
+    p {
+        width: 130px;
+    }
+}
+
+.boton_iniciar_sesion:hover,
+.boton_iniciar_sesion_movil:hover {
     /* estilos de cuando se hace hocer en el boton de 
     iniciar sesion */
     background-color: transparent;
@@ -179,7 +205,7 @@ resposive */
 }
 
 /* efecto de desenfoque al fondo cuando salga una ventana */
-.fondo-blur{
+.fondo-blur {
     position: fixed;
     top: 0;
     left: 0;
@@ -204,6 +230,7 @@ resposive */
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 0.7rem;
     font-size: 1rem;
+    border: 1px solid #ccc;
     box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
 }
 
@@ -225,6 +252,8 @@ resposive */
     align-items: center;
     font-weight: 500;
     color: #162916;
+    border: 1px solid #ccc;
+
 
     /* estilos de los inputs tipo radio */
     input {
@@ -243,6 +272,8 @@ resposive */
     align-items: center;
     font-weight: 500;
     color: #162916;
+    border: 1px solid #ccc;
+
 
     /* estilos del input tipo check */
     input {
@@ -264,7 +295,8 @@ y boton de buscar */
     padding: 30px 20px;
     flex-wrap: wrap;
     gap: 10px;
-/* estilos de la linea que esta entre los dos inputs de busque de ciudades */
+
+    /* estilos de la linea que esta entre los dos inputs de busque de ciudades */
     span {
         z-index: 1;
         font-size: 1.5rem;
@@ -327,13 +359,13 @@ no salga lineas oscuras en los bordes */
 }
 
 /* contenedor de los inputs de fecha para mantener una linea entre ellos */
-.container-inputs-fechas{
+.container-inputs-fechas {
     display: flex;
     align-items: center;
 }
 
 /* estilos del input de fecha de ida */
-.input-fecha-ida{
+.input-fecha-ida {
     height: 40px;
     width: 200px;
     padding: 5px 10px;
@@ -345,7 +377,7 @@ no salga lineas oscuras en los bordes */
 }
 
 /* estilos del input de fecha de vuelta */
-.input-fecha-vuelta{
+.input-fecha-vuelta {
     height: 40px;
     width: 200px;
     padding: 5px 10px 5px 18px;
@@ -358,7 +390,7 @@ no salga lineas oscuras en los bordes */
 }
 
 /* estilos del input de cantidad de personas */
-.input-personas{
+.input-personas {
     height: 40px;
     width: 85px;
     font-size: 1rem;
@@ -369,7 +401,7 @@ no salga lineas oscuras en los bordes */
 }
 
 /* estilos del boton de buscar */
-.btn-buscar{
+.btn-buscar {
     font-size: 1rem;
     font-weight: 500;
     background-color: #172D43;
@@ -381,11 +413,11 @@ no salga lineas oscuras en los bordes */
     cursor: pointer;
 }
 
-.btn-buscar:hover{
+.btn-buscar:hover {
     scale: 1.1;
 }
 
-.btn-buscar:active{
+.btn-buscar:active {
     scale: 1;
 }
 
@@ -398,6 +430,10 @@ no salga lineas oscuras en los bordes */
     .ocultar-menu {
         /* para que aparezcan los elementos de la hamburquesa */
         display: block;
+    }
+
+    .boton_moneda {
+        display: none !important;
     }
 
     /* se le hace espacio al label hamburguesa se puso en posición 
@@ -457,7 +493,7 @@ no salga lineas oscuras en los bordes */
         padding: 20px 20px 20px 40px;
     }
 
-    .menu_navegacion{
+    .menu_navegacion {
         padding-top: 100px;
     }
 
@@ -470,12 +506,72 @@ no salga lineas oscuras en los bordes */
 
     /* evento para cuando se le de al menu o a la equis para cerrarlo */
     #check-menu:checked~.menu_navegacion {
-        
+
         right: 0%;
     }
 
     #check-menu:checked~.fondo-blur {
         display: block;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    #input-origen,
+    #input-destino,
+    .input-fecha-ida,
+    .input-fecha-vuelta {
+        width: 155px;
+    }
+
+    .boton_iniciar_sesion {
+        display: none !important;
+    }
+
+    .container-radios-check label {
+        font-size: 0.8rem;
+    }
+
+    .logo_flynova {
+        width: 180px;
+    }
+
+    .menu_navegacion::after {
+        content: '';
+        display: block;
+        width: 150px;
+        height: 60px;
+        background-image: url(../Assets/compartidos/Logos/logo\ flynova\ gris.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+    .container-check {
+        margin-right: 15px;
+    }
+
+    /* posicion de la equis para cerrar el menu de hamburguesa */
+    .ocultar-menu {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+    }
+
+    .menu_navegacion a {
+        display: block;
+        width: fit-content;
+        padding: 20px 20px 20px 70px;
+    }
+
+    .boton_iniciar_sesion_movil {
+        margin-left: 45px;
+        margin-bottom: 20px;
+        display: flex;
     }
 
 }
