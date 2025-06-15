@@ -1,0 +1,17 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos de pruebas locales
+.env
+
