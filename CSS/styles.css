@@ -422,6 +422,7 @@ no salga lineas oscuras en los bordes */
     scale: 1;
 }
 
+/* estilos del contenedor principal de la pagina */
 main {
     margin-top: 50px;
     display: flex;
@@ -431,6 +432,7 @@ main {
     gap: 50px;
 }
 
+/* contenedor de los mesajes de vuelos en promoción */
 .container-mensaje-de-promocion {
     display: flex;
     flex-direction: column;
@@ -439,10 +441,12 @@ main {
     justify-content: center;
     padding: 0 60px;
 
+    /* tamaño del titulo de la primera sección */
     h1 {
         font-size: 2rem;
     }
 
+    /* estilos del parrafo de la primera sección */
     p {
         font-size: 1.1rem;
         font-weight: 500;
@@ -450,6 +454,8 @@ main {
     }
 }
 
+/* Estilos del contenedor de la primera sección de los vuelos
+en promoción */
 .seccion-vuelos-en-oferta {
     max-width: 1300px;
     display: grid;
@@ -458,6 +464,7 @@ main {
     margin: 0 auto;
 }
 
+/* banner de cada ciudad con la imagen y el contenido */
 .banner-ciudad-promocion {
     width: fit-content;
     height: fit-content;
@@ -469,6 +476,8 @@ main {
     cursor: pointer;
 }
 
+/* contenedor de la información del los banner de las ciudades en
+promoción */
 .container-info-ciudad {
     margin-top: 20px;
     color: #162916;
@@ -480,6 +489,7 @@ main {
     gap: 5px;
 }
 
+/* estilos y posición del texto de recomendado para tí */
 .recomendado-para-ti {
     position: absolute;
     background-color: rgba(102, 23, 163, 1);
@@ -493,17 +503,20 @@ main {
     top: 50%;
 }
 
+/* estilos de la fecha de los viajes */
 .fecha-viaje-promocion {
     font-size: 1rem;
     font-weight: 500;
     color: #8d8d8d;
 
+    /* se pone en negrita para resaltar si es de ida o ida y vuelta */
     span {
         font-weight: 700;
         color: #162916;
     }
 }
 
+/* estilos del texto de acumula puntos del banner de las ciudades */
 .acumula-puntos {
     background-color: rgba(128, 15, 113, 1);
     color: #fafafa;
@@ -515,34 +528,39 @@ main {
     margin: 10px 0 10px 20px;
 }
 
+/* texto de precio por persona de los banners */
 .p-precio-por-persona {
     font-size: 0.9rem;
     font-weight: 500;
     color: #5d5d5d;
 }
 
+/* contenedor del precio de los vuelos y la fecha de next */
 .container-precio-next {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+/* tamaño del texto completo del precio */
     p {
         font-size: 1.6rem;
-        span{
+/* se pone en negrita el precio para resaltar */
+        span {
             font-weight: 600;
         }
     }
-
-    img{
+/* Tamaño del icono de next */
+    img {
         width: 2rem;
     }
 }
 
-.banner-ciudad-promocion:hover{
+/* efeecto hover de los banner de las ciudades */
+.banner-ciudad-promocion:hover {
     scale: 1.02;
 }
 
-.ver-mas-vuelos{
+/* estilos del enlace de ver más vuelos */
+.ver-mas-vuelos {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -553,7 +571,8 @@ main {
     transition: 0.2s;
 }
 
-.ver-mas-vuelos:hover{
+/* efecto de hover del enlace de ver más vuelos */
+.ver-mas-vuelos:hover {
     text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     text-decoration: underline;
     transform: translateY(-1px);
