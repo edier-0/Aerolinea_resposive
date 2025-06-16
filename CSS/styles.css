@@ -24,7 +24,7 @@ body {
     height: 12vh;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
 }
 
 .logo_flynova {
@@ -415,7 +415,7 @@ no salga lineas oscuras en los bordes */
 }
 
 .btn-buscar:hover {
-    scale: 1.05;
+    scale: 1.03;
 }
 
 .btn-buscar:active {
@@ -430,6 +430,8 @@ main {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    /* para centrar el contenido porque se veia rodado */
+    padding: 0 8vw;
 }
 
 /* contenedor de los mesajes de vuelos en promoción */
@@ -439,7 +441,7 @@ main {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding: 0 60px;
+    padding: 0;
 
     /* tamaño del titulo de la primera sección */
     h1 {
@@ -461,7 +463,6 @@ en promoción */
     display: grid;
     gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
 }
 
 /* banner de cada ciudad con la imagen y el contenido */
@@ -507,7 +508,7 @@ promoción */
 .fecha-viaje-promocion {
     font-size: 1rem;
     font-weight: 500;
-    color: #8d8d8d;
+    color: #5d5d5d;
 
     /* se pone en negrita para resaltar si es de ida o ida y vuelta */
     span {
@@ -540,15 +541,18 @@ promoción */
     display: flex;
     align-items: center;
     justify-content: space-between;
-/* tamaño del texto completo del precio */
+
+    /* tamaño del texto completo del precio */
     p {
         font-size: 1.6rem;
-/* se pone en negrita el precio para resaltar */
+
+        /* se pone en negrita el precio para resaltar */
         span {
             font-weight: 600;
         }
     }
-/* Tamaño del icono de next */
+
+    /* Tamaño del icono de next */
     img {
         width: 2rem;
     }
@@ -556,11 +560,12 @@ promoción */
 
 /* efeecto hover de los banner de las ciudades */
 .banner-ciudad-promocion:hover {
-    scale: 1.02;
+    scale: 1.01;
 }
 
 /* estilos del enlace de ver más vuelos */
-.ver-mas-vuelos {
+.ver-mas-vuelos,
+.ver-mas-paquetes {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -572,12 +577,176 @@ promoción */
 }
 
 /* efecto de hover del enlace de ver más vuelos */
-.ver-mas-vuelos:hover {
+.ver-mas-vuelos:hover,
+.ver-mas-paquetes:hover {
     text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
     text-decoration: underline;
     transform: translateY(-1px);
 }
 
+/* contenedor del banner del perro */
+.container-banner-perro {
+    width: fit-content;
+    padding: 0 50px;
+    position: relative;
+
+    /* tamaño de la imagen relacionado al tamaño del padre (responsive) */
+    img {
+        width: 100%;
+    }
+
+    /* tamño, color y posicion del texto del banner del perro */
+    .texto_banner_del_perro {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        right: 9%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fafafa;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
+
+/* subtitulo de vamonos de vacaciones para la sección de paquetes */
+.container-subtitulo-vamonos-de-vacaiones {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    font-size: 1.5rem;
+    color: #162916;
+}
+
+/* estilos de la seccion de paquetes */
+.seccion-paquetes {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+/* Estilos del banner que contiene la imagen y la información
+ de cada paquete */
+.banner-ciudad-paquete {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #d3d3d3;
+    border-radius: 0.7rem;
+    box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto hover sobre el banner de cada paquete */
+.banner-ciudad-paquete:hover {
+    scale: 1.01;
+}
+
+/* Estilos y posición de la información de los días y noches 
+en cada paquete */
+.dias-noches {
+    position: absolute;
+    background-color: rgba(63, 149, 250, 1);
+    left: 5%;
+    top: 38%;
+    color: #fafafa;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenesor de la información de cada paquete */
+.container-info-ciudad-paquete {
+    margin-top: 30px;
+    padding: 0 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* estilos del parrafo paquete */
+.p-paquete {
+    color: #5d5d5d;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* estilos delnombre de cada paquete */
+.nombre-ciudad-paquete {
+    font-size: 1.2rem;
+    color: #162916;
+}
+
+/* contenedor de la punuación de cada paquete */
+.container-puntuacion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* estilos de la puntuación de cada paquete */
+.puntos {
+    background-color: rgba(3, 166, 145, 1);
+    padding: 3px 7px;
+    color: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* estilos de los parrafos de...👇 */
+.partiendo-desde-bogota,
+.p-hotel-mas-vuelo,
+.precio-por-persona {
+    color: #5d5d5d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* estilos del parrafo de ahorras */
+.p-ahorras {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid rgba(3, 166, 145, 1);
+    background-color: rgba(230, 251, 244, 1);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 0.4rem;
+    margin: 5px 0 5px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* estilo del precio de antes */
+.p-precio-antes {
+    color: #5d5d5d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+/* estilos del precio de ahora */
+.precio-paquete {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+/* posición de la linea de los paquetes */
+.linea {
+    position: absolute;
+    bottom: 23%;
+}
 
 /* RESPONSIVE */
 
@@ -673,11 +842,25 @@ promoción */
         display: block;
     }
 
-
     /* SECCION DE VUELOS EN PROMOCIÓN */
     .seccion-vuelos-en-oferta {
         grid-template-columns: 1fr;
     }
+
+    /* BANNER DEL PERRO EN LA PLAYA */
+    .container-banner-perro {
+        display: none;
+    }
+
+    /* SECCION DE PAQUETES */
+    .seccion-paquetes {
+        grid-template-columns: 1fr;
+    }
+
+    .container-subtitulo-vamonos-de-vacaiones {
+        justify-content: center;
+    }
+
 }
 
 
@@ -760,6 +943,12 @@ promoción */
         right: 40px;
     }
 
+    /* CONTENEDOR PRINCIPAL */
+    main {
+        /* para centrar el contenido */
+        padding: 0 6.5vw;
+    }
+
     /* MENSAJE DE PROMOCION DE LOS VUELOS */
     .container-mensaje-de-promocion {
         display: none;
@@ -770,4 +959,8 @@ promoción */
         margin-top: 31vh;
     }
 
+    /* SECCION DE PAQUETES */
+    .container-subtitulo-vamonos-de-vacaiones {
+        font-size: 1.1rem;
+    }
 }
