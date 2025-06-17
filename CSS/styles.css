@@ -611,7 +611,9 @@ promoción */
 }
 
 /* subtitulo de vamonos de vacaciones para la sección de paquetes */
-.container-subtitulo-vamonos-de-vacaiones {
+.container-subtitulo-vamonos-de-vacaiones,
+/* subtitulo de descubre los destinos más populares */
+.container-subtitulo-descubre-destinos {
     width: 100%;
     display: flex;
     align-items: start;
@@ -748,6 +750,72 @@ en cada paquete */
     bottom: 23%;
 }
 
+/* estilos de la sección de los destinos mas populares */
+.seccion-destinos-mas-populares {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 45px;
+}
+
+/* estilos de los articulos de las ciudades mas populares */
+.ciudad-popular {
+    height: fit-content;
+    width: fit-content;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* efecto hover sobre las ciudades mas populares */
+.ciudad-popular:hover {
+    scale: 1.01;
+}
+
+/* contenedor de la información de las ciudades */
+.container-info-destinos-populares {
+    margin-top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: rgba(19, 0, 79, 0.9);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0 0 0.7rem 0.7rem;
+
+    /* contenedor del icono de corazón y los likes */
+    .container-likes {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        filter: invert(100%);
+    }
+
+    /* contenedor del icono de lugar y el lugar */
+    .container-ubicacion {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        filter: invert(100%);
+    }
+}
+
+/* estilos y posición del conntenedor
+ del numero de la ciudad y el degradado */
+.container-rank-degradado {
+    width: 100%;
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 90px;
+    top: 53%;
+    color: #fafafa;
+    background-image: linear-gradient(to bottom, rgba(44, 0, 181, 0), rgba(19, 0, 79, 1));
+    padding: 55px 0 5px 20px;
+}
+
 /* RESPONSIVE */
 
 @media(max-width: 1350px) {
@@ -861,6 +929,16 @@ en cada paquete */
         justify-content: center;
     }
 
+    /* SECCION DE DESCUBRE LOS DESTINOS MAS POPULARES */
+    .seccion-destinos-mas-populares {
+        grid-template-columns: 1fr;
+    }
+
+    .container-subtitulo-descubre-destinos {
+        justify-content: center;
+    }
+
+
 }
 
 
@@ -868,6 +946,11 @@ en cada paquete */
 @media(max-width:870px) {
     .container-mensaje-de-promocion {
         margin-top: 10vh;
+    }
+
+    /* SECCION DE DESCUBRE LOS DESTINOS MAS POPULARES */
+    .container-subtitulo-descubre-destinos {
+        font-size: 1.3rem;
     }
 }
 
@@ -962,5 +1045,10 @@ en cada paquete */
     /* SECCION DE PAQUETES */
     .container-subtitulo-vamonos-de-vacaiones {
         font-size: 1.1rem;
+    }
+
+    /* SECCION DE DESCUBRE LOS DESTINOS MAS POPULARES */
+    .ocultar_ciudad {
+        display: none;
     }
 }
