@@ -431,7 +431,6 @@ main {
     justify-content: center;
     gap: 50px;
     /* para centrar el contenido porque se veia rodado */
-    padding: 0 8vw;
 }
 
 /* contenedor de los mesajes de vuelos en promoción */
@@ -441,7 +440,7 @@ main {
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 0 8vw;
 
     /* tamaño del titulo de la primera sección */
     h1 {
@@ -619,6 +618,7 @@ promoción */
     align-items: start;
     font-size: 1.5rem;
     color: #162916;
+    padding-left: 8vw;
 }
 
 /* estilos de la seccion de paquetes */
@@ -816,6 +816,73 @@ en cada paquete */
     padding: 55px 0 5px 20px;
 }
 
+/* estilos del contenedor y el subtitulo de no te limites */
+.container-no-te-limites {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    font-size: 1.5rem;
+    color: #162916;
+    padding-left: 8vw;
+}
+
+/* tamaño del contendeor de la imagen de no te limites
+ y el tamaño de la imagen */
+.container-banner-no-te-limites,
+.img-banner-no-te-limites {
+    width: 100%;
+}
+
+/* posision relativa para ubicar el texto de
+descubre otros continentes */
+.container-banner-no-te-limites {
+    position: relative;
+}
+
+/* estilos y posición del texto de explora otros continentes */
+.container-mensaje-no-te-limites {
+    position: absolute;
+    top: 20%;
+    width: 40%;
+    color: #162916;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.70);
+    border-radius: 0rem 0.8rem 0.8rem 0rem;
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 50px;
+
+    /* estilos del parrafo de explora otros continentes */
+    p {
+        text-align: justify;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    /* estilos del enlace de ver mas */
+    a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 1.2rem;
+        color: #162916;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+
+    /* efecto del enlace de ver más */
+    a:hover {
+        text-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+        text-decoration: underline;
+        transform: translateY(-1px);
+        font-weight: 600;
+    }
+}
+
 /* RESPONSIVE */
 
 @media(max-width: 1350px) {
@@ -927,6 +994,7 @@ en cada paquete */
 
     .container-subtitulo-vamonos-de-vacaiones {
         justify-content: center;
+        padding: 0;
     }
 
     /* SECCION DE DESCUBRE LOS DESTINOS MAS POPULARES */
@@ -936,8 +1004,15 @@ en cada paquete */
 
     .container-subtitulo-descubre-destinos {
         justify-content: center;
+        padding: 0;
     }
 
+    /* SECCION DE NO TE LIMITES */
+        /* SECCION NO TE LIMITES */
+    .container-banner-no-te-limites,
+    .container-no-te-limites {
+        display: none;
+    }
 
 }
 
