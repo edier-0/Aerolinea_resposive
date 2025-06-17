@@ -883,6 +883,88 @@ descubre otros continentes */
     }
 }
 
+/* estilos de la sección de más servicios */
+.mas-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #d3d3d3;
+    border-radius: 0.8rem;
+    padding: 30px;
+    gap: 50px;
+    width: fit-content;
+    background-color: rgba(217, 217, 217, 0.2);
+
+    /* tamaño del texto conoce más sercvicios */
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    /* estilos del contenedor de los servicios con la azafata */
+    .container-servicios {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* estilos de cada banner de los servicios */
+    .servicio {
+        width: 303px;
+        border: 2px solid #d3d3d3;
+        border-radius: 0.8rem;
+        box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* contenedor de la información de cada servicio */
+.container-info-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 15px;
+    border-radius: 0.8rem;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+
+    /* tamaño y color del titulo de cada servicio */
+    h3 {
+        font-size: 1.2rem;
+        color: #162916;
+    }
+
+    /* estilos de los parrafos de la información de cada servicio */
+    p {
+        text-align: justify;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        color: #5d5d5d;
+        font-weight: 500;
+    }
+
+    /* estilos del enlace de ver más servicios */
+    a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        text-decoration: none;
+        color: #162916;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+
+    /* efecto hover del enlace */
+    a:hover {
+        text-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+        text-decoration: underline;
+        transform: translateY(-1px);
+        font-weight: 600;
+    }
+}
+
+
 /* RESPONSIVE */
 
 @media(max-width: 1350px) {
@@ -1008,9 +1090,18 @@ descubre otros continentes */
     }
 
     /* SECCION DE NO TE LIMITES */
-        /* SECCION NO TE LIMITES */
+    /* SECCION NO TE LIMITES */
     .container-banner-no-te-limites,
     .container-no-te-limites {
+        display: none;
+    }
+
+    /* SECCION MAS SERVICIOS */
+    .container-servicios {
+        flex-direction: column;
+    }
+
+    .azafata{
         display: none;
     }
 
