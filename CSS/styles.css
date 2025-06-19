@@ -1060,8 +1060,106 @@ descubre otros continentes */
     }
 }
 
-/* RESPONSIVE */
+/* contenedor del subtitulo de la sección de preguntas frecuentes */
+.container-subtitulo-preguntas-frecuentes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-left: 8vw;
 
+    h2 {
+        border-bottom: 3.5px solid #162916;
+    }
+}
+
+/* Estilos de la sección de la preguntas frecuentes */
+.preguntas-frecuentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acordeon {
+    /* todas las pregntas */
+    width: 100%;
+    max-width: 85%;
+}
+
+.acordeon input[type='checkbox'] {
+    /* quita el cuadrado del input tipo checkbox */
+    display: none;
+}
+
+.acordeon li {
+    /* Quita los estilos a la lista */
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.acordeon li label {
+    /* estilos del label (las preguntas) */
+    display: flex;
+    /* Hace que no se apiñen los label */
+    align-items: center;
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 20px;
+    margin-bottom: 2px;
+    /* para que se vea una linea entre la pregunta y la respuesta */
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    /* relativo para posicionar el icono de desplegar luego */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+}
+
+.acordeon label::after {
+    /* Añade el icono de desplegar en el css con la url */
+    content: url(../Assets/compartidos/iconos/next_linea.svg);
+    transform: rotate(90deg);
+    position: absolute;
+    /* posicioon absoluta para posicionarlo */
+    right: 20px;
+    transition: transform 0.5s;
+    /* Se le da una transformación para luego hacer que rote */
+}
+
+.acordeon .contenedor {
+    /* Estilos de los contenedores de las respuestas */
+    background-color: #fff;
+    text-align: center;
+    /* Alinea el texto al centro */
+    padding: 0 60px 0 0;
+    /* un padding a los lados de base */
+    max-height: 0;
+    /* sin altura para ocultarlo */
+    overflow: hidden;
+    /* hace que los elementos esten ocultos si el cotenedor no es lo suficientemente grande */
+    text-align: justify;
+    /* justifica el texto */
+    transition: max-height 0.5s, padding 0.5s;
+    /* duracion de la transicion cuando estas propiedades cambien de tamaño con el after*/
+    line-height: 1.5;
+}
+
+.acordeon input[type='checkbox']:checked~.contenedor {
+    /* Verifica que se halla chekeado un checkbox para desplegar la respuesta */
+    max-height: 600px;
+    padding: 30px 30px;
+}
+
+.acordeon input[type='checkbox']:checked~ ::after {
+    /* verifica que este chekeado el checkbox para rotar el svg */
+    transform: rotate(990deg);
+}
+
+
+/* RESPONSIVE */
 @media(max-width: 1350px) {
 
     /* HEADER */
@@ -1201,6 +1299,20 @@ descubre otros continentes */
     }
 
     /* SECCION SOBRE NOSOTROS */
+
+    .container-titulo-sobre-nosotros {
+        justify-content: center;
+
+        img {
+            width: 70%;
+        }
+
+        /* estilos y posición del titulo sobre nosotros */
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
     .container-fondo-sobre-nosotros {
         display: flex;
         align-items: center;
@@ -1280,17 +1392,12 @@ descubre otros continentes */
         }
     }
 
-    .container-titulo-sobre-nosotros {
+    /* SECCIÓN PREGUNTAS FRECUENTES */
+    .container-subtitulo-preguntas-frecuentes {
+        display: flex;
+        align-items: center;
         justify-content: center;
-
-        img {
-            width: 70%;
-        }
-
-        /* estilos y posición del titulo sobre nosotros */
-        h2 {
-            font-size: 1.5rem;
-        }
+        padding-left: 0vw;
     }
 }
 
@@ -1413,9 +1520,10 @@ descubre otros continentes */
     /* SECCION SOBRE NOSOTROS */
     .container-titulo-sobre-nosotros {
 
-        img{
+        img {
             width: 100%;
         }
+
         /* estilos y posición del titulo sobre nosotros */
         h2 {
             font-size: 1.1rem;
@@ -1432,4 +1540,25 @@ descubre otros continentes */
             width: 100%;
         }
     }
+
+    /* SECCION PREGUNTAS FRECUENTES */
+
+    .container-subtitulo-preguntas-frecuentes {
+        font-size: 1.1rem;
+
+        img {
+            height: 40px;
+        }
+    }
+
+    .acordeon {
+        /* todas las pregntas */
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .acordeon li label {
+    font-size: 1rem;
+
+}
 }
