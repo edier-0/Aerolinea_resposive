@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,5 +29,41 @@
             </button>
         </div>
     </header>
+    <div class="separacion">
+    </div>
+    <main>
+        <form action="">
+            <div class="container-busqueda">
+                <div class="vuelo-ida">
+                    <img src="../Assets/compartidos/iconos/avion despegando1.svg" alt="">
+                    <input list="ciudades" value="Bogotá">
+                    <datalist id="ciudades">
+                        <option value="Medellín"></option>
+                        <option value="Pereira"></option>
+                        <option value="Bogotá"></option>
+                    </datalist>
+                </div>
+                <div class="destino">
+                    <img src="../Assets/compartidos/iconos/Avion aterrizando.svg" alt="">
+                    <input list="ciudades" value="Medellín">
+                    <datalist id="ciudades">
+                        <option value="Medellín"></option>
+                        <option value="Pereira"></option>
+                        <option value="Bogotá"></option>
+                    </datalist>
+                </div>
+                <input class="fecha" type="date">
+                <div class="cantidad-personas">
+                    <img src="../Assets/compartidos/iconos/user-add.svg" alt="">
+                    <input type="number" min="1" value="1">
+                </div>
+                <button>
+                    <p>Buscar</p>
+                </button>
+            </div>
+        </form>
+    </main>
+
 </body>
+
 </html>
