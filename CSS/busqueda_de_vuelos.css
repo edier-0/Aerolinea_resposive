@@ -184,6 +184,59 @@ form button {
     font-size: 16px;
 }
 
+.container-info-viaje {
+    width: 100%;
+    padding-left: 9vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container-fechas {
+    /* Contenedor del carrusel de los dias de la semana con el precio */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.jueves {
+    /* estilo del dia de la semana escogido */
+    font-size: 18px;
+    border-radius: 0.7rem;
+    font-weight: 500;
+    gap: 10px;
+    border: 2px solid #03A691;
+    box-shadow: 0px 0px 10px -5px #03A691;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+}
+
+.dias {
+    /* estilo de los dias de la semana menos del que está selecionado */
+    font-weight: 500;
+    font-size: 16px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.izquierda {
+    /* Rotacion e la flecha del lado derecho de los dias de la semana */
+    height: 40px;
+    transform: rotate(180deg);
+}
+
+.derecha {
+    height: 40px;
+}
+
 
 /* RESPONSIVE */
 @media(max-width: 1350px) {
@@ -198,6 +251,7 @@ form button {
     .boton_moneda {
         display: none !important;
     }
+
 
 
 
@@ -254,6 +308,54 @@ form button {
         font-size: 16px;
     }
 
+
+
+
+
+    .container-info-viaje {
+        font-size: 0.8rem;
+    }
+
+    .container-fechas {
+        /* Contenedor del carrusel de los dias de la semana con el precio */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+    }
+
+    .jueves {
+        /* estilo del dia de la semana escogido */
+        font-size: 0.8rem;
+        
+    }
+
+    .dias {
+        /* estilo de los dias de la semana menos del que está selecionado */
+        font-weight: 500;
+        font-size: 0.8rem;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+    }
+
+    .izquierda {
+        /* Rotacion e la flecha del lado derecho de los dias de la semana */
+        height: 40px;
+        transform: rotate(180deg);
+    }
+
+    .derecha {
+        height: 40px;
+    }
+
+    .ocultar-t{
+        display: none;
+    }
+
 }
 
 
@@ -295,19 +397,20 @@ form button {
             height: 18px;
         }
     }
-.separacion {
-    /* separación del formulario al la parte superior del header */
-    height: 70px;
-}
 
-form {
-    /* formulario de busqueda */
-    padding: 20px 0px;
-    display: flex;
-    width: 100%;
-}
+    .separacion {
+        /* separación del formulario al la parte superior del header */
+        height: 70px;
+    }
 
-        .vuelo-ida input,
+    form {
+        /* formulario de busqueda */
+        padding: 20px 0 0 0;
+        display: flex;
+        width: 100%;
+    }
+
+    .vuelo-ida input,
     /* estilos de los inputs de vuelo de ida y de destino */
     .destino input {
         font-size: 0.8rem;
@@ -360,5 +463,13 @@ form {
         font-size: 0.8rem;
     }
 
-}
 
+
+
+    .container-info-viaje {
+        width: 100%;
+        padding-left: 5px;
+        font-size: 0.5rem;
+    }
+
+}
