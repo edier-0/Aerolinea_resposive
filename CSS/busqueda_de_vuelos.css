@@ -99,6 +99,91 @@ body {
     scale: 0.95;
 }
 
+.separacion {
+    /* separación del formulario al la parte superior del header */
+    height: 80px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    /* formulario de busqueda */
+    padding: 20px;
+    display: flex;
+    width: 90%;
+}
+
+.container-busqueda {
+    /* contenedor de los elementos del formulario */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.vuelo-ida,
+/* posicion relativa para los contenedores de los inputs de vuelo de ida,
+destino y cantidad de personas para ubicar los iconos dentro */
+.destino,
+.cantidad-personas {
+    position: relative;
+}
+
+.vuelo-ida input,
+/* estilos de los inputs de vuelo de ida y de destino */
+.destino input {
+    font-size: 18px;
+    width: 240px;
+    height: 50px;
+    border: 2px solid #999999;
+    border-radius: 0.5rem;
+    padding: 5px 5px 5px 40px;
+}
+
+.vuelo-ida img,
+/* estilos de los iconos de los inputs */
+.destino img,
+.cantidad-personas img {
+    height: 24px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.fecha {
+    /* estilos del input de tipo date para la fecha */
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid #999999;
+    border-radius: 0.5rem;
+    padding: 5px 40px 5px 40px;
+}
+
+.cantidad-personas input {
+    /* estilos del input de tipo numerico para la cantidad de personas */
+    font-size: 18px;
+    width: 90px;
+    height: 50px;
+    border: 2px solid #999999;
+    border-radius: 0.3rem;
+    padding: 5px 5px 5px 40px;
+}
+
+form button {
+    /* estilos del boton de buscar del formulario */
+    height: 50px;
+    width: 100px;
+    border-radius: 0.5rem;
+    background-color: #172D43;
+    color: white;
+    font-size: 16px;
+}
+
 
 /* RESPONSIVE */
 @media(max-width: 1350px) {
@@ -114,7 +199,64 @@ body {
         display: none !important;
     }
 
+
+
+    .vuelo-ida input,
+    /* estilos de los inputs de vuelo de ida y de destino */
+    .destino input {
+        font-size: 1rem;
+        width: 150px;
+        height: 45px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px 5px 5px 40px;
+    }
+
+    .vuelo-ida img,
+    /* estilos de los iconos de los inputs */
+    .destino img,
+    .cantidad-personas img {
+        height: 22px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+    }
+
+    .fecha {
+        /* estilos del input de tipo date para la fecha */
+        font-size: 1rem;
+        width: 150px;
+        height: 45px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px;
+    }
+
+    .cantidad-personas input {
+        /* estilos del input de tipo numerico para la cantidad de personas */
+        font-size: 18px;
+        width: 80px;
+        height: 45px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px 5px 5px 40px;
+    }
+
+    form button {
+        /* estilos del boton de buscar del formulario */
+        height: fit-content;
+        width: fit-content;
+        padding: 11px 10px;
+        border-radius: 0.5rem;
+        background-color: #172D43;
+        color: white;
+        font-size: 16px;
+    }
+
 }
+
+
 
 @media(max-width: 500px) {
 
@@ -124,9 +266,10 @@ body {
         width: 180px;
     }
 
-    .header{
+    .header {
         padding: 0 20px;
     }
+
     .boton_iniciar_sesion {
         /* estilos del boton iniciar sesion */
         display: flex;
@@ -148,9 +291,74 @@ body {
             width: fit-content;
         }
 
-        img{
+        img {
             height: 18px;
         }
     }
+.separacion {
+    /* separación del formulario al la parte superior del header */
+    height: 70px;
+}
+
+form {
+    /* formulario de busqueda */
+    padding: 20px 0px;
+    display: flex;
+    width: 100%;
+}
+
+        .vuelo-ida input,
+    /* estilos de los inputs de vuelo de ida y de destino */
+    .destino input {
+        font-size: 0.8rem;
+        width: 100px;
+        height: 40px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px 5px 5px 30px;
+    }
+
+    .vuelo-ida img,
+    /* estilos de los iconos de los inputs */
+    .destino img,
+    .cantidad-personas img {
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+    }
+
+    .fecha {
+        /* estilos del input de tipo date para la fecha */
+        font-size: 0.7rem;
+        width: 100px;
+        height: 40px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px;
+    }
+
+    .cantidad-personas input {
+        /* estilos del input de tipo numerico para la cantidad de personas */
+        font-size: 0.9rem;
+        width: 60px;
+        height: 40px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px 5px 5px 30px;
+    }
+
+    form button {
+        /* estilos del boton de buscar del formulario */
+        height: fit-content;
+        width: fit-content;
+        padding: 11px 5px;
+        border-radius: 0.5rem;
+        background-color: #172D43;
+        color: white;
+        font-size: 0.8rem;
+    }
 
 }
+
