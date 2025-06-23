@@ -469,12 +469,6 @@ footer {
 @media(max-width: 1350px) {
 
     /* HEADER */
-    .mostrar-menu,
-    .ocultar-menu {
-        /* para que aparezcan los elementos de la hamburquesa */
-        display: block;
-    }
-
     .boton_moneda {
         display: none !important;
     }
@@ -722,7 +716,7 @@ footer {
         display: none;
     }
 
-    .container-fechas{
+    .container-fechas {
         gap: 20px;
     }
 
@@ -762,10 +756,10 @@ footer {
     }
 
     .vuelo {
-    /* estilo de los banner de los vuelos */
-    padding: 30px 20px;
+        /* estilo de los banner de los vuelos */
+        padding: 30px 20px;
 
-}
+    }
 
     .avion {
         /* tamaño del icono del avion */
