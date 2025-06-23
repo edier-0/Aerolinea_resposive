@@ -37,16 +37,19 @@
         <div class="container-formulario">
             <form action="">
                 <div class="tipo-pasajero">
-                    <img src="../iconos/user cuadrado.svg" alt="">
+                    <img src="../Assets/compartidos/iconos/user.svg" alt="">
                     <p>Adulto</p>
                 </div>
                 <div class="container-genero-nombre-apellido">
-                    <input class="input-genero" list="generos" placeholder="Genero">
-                    <datalist id="generos">
-                        <option value="Masculino"></option>
-                        <option value="Femenino"></option>
-                    </datalist>
-                    <input class="input-nombre" type="text" placeholder="Nombre">
+                    <div class="container_para_movil">
+                        <input class="input-genero" list="generos" placeholder="Genero">
+                        <datalist id="generos">
+                            <option value="Masculino"></option>
+                            <option value="Femenino"></option>
+                        </datalist>
+                        <input class="input-nombre" type="text" placeholder="Nombre">
+                    </div>
+
                     <input class="input-apellido" type="text" placeholder="Apellido">
                 </div>
                 <div class="container-fecha_nacimiento-nacionalidad">
@@ -73,13 +76,16 @@
                 </p>
                 <div class="container-correo-codigo-telefono">
                     <input type="email" class="input-correo" placeholder="Correo electronico">
-                    <input list="codigos" class="input-codigo" placeholder="Código">
-                    <datalist id="codigos">
-                        <option value="+57"></option>
-                        <option value="+34"></option>
-                        <option value="+44"></option>
-                    </datalist>
-                    <input type="text" class="input-telefono" placeholder="Teléfono">
+                    <div class="container_para_movil">
+                        <input list="codigos" class="input-codigo" placeholder="Código">
+                        <datalist id="codigos">
+                            <option value="+57"></option>
+                            <option value="+34"></option>
+                            <option value="+44"></option>
+                        </datalist>
+                        <input type="text" class="input-telefono" placeholder="Teléfono">
+                    </div>
+
                 </div>
             </form>
         </div>
@@ -97,7 +103,7 @@
         </div>
         <div class="container-boton">
             <a href="pagar-y-confirmar-reserva.html">
-            <p>continuar</p>
+                <p>continuar</p>
             </a>
         </div>
     </main>
