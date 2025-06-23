@@ -103,6 +103,219 @@ body {
     height: 80px;
 }
 
+main {
+    /* estilos del contenedor principal para centrar todos los elementos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 0 5vw;
+    gap: 40px;
+}
+
+.container-personaliza-tu-viaje {
+    /* contenedor de los elementos del titulo */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.container-icono-equipaje {
+    /* contenedor del texto  el icono de equipaje */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.personaliza-tu-viaje {
+    /* texto personalisa tu viaje */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container-icono-equipaje img {
+    /* tamaño del icono de la maleta */
+    height: 30px;
+}
+
+.equipaje {
+    /* texto equipaje que esta con el icono */
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.p-compra-equipaje {
+    /* parrafo de compra ahora */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-info-equipaje {
+    /* contenedor de la informacion para comprar mas equipaje */
+    width: 100%;
+    /* del tamaño de toda la pantalla */
+}
+
+.container-equipaje-de-mano-y-bodega {
+    /* Contenedor de los elementos de 
+    equipaje de mano y bodeaga con la imagen del turista */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid #03A691;
+    border-radius: 0.7rem;
+    padding: 40px;
+    width: fit-content;
+    background-color: #FAFFFF;
+}
+
+.container-texto-superior {
+    /* contenedor de los textos de la parte superior de los elementos de informacion */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conatiner-informacion-equipaje {
+    /* contenedor de los elementos de informacion de equipaje de mano y de bodega */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.p-equipaje-mano-bodega {
+    /* texto de equipaje de mano y de bodega (el tiitulo) */
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.p-revisa-tu-equipaje {
+    /* texto de revisa tu equipaje */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container-precio-desde {
+    /* contenedor de los elemenntos de precio desde
+    y el precio */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.p-desde {
+    /* texto desde */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.p-precio {
+    /* texto del precio */
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.p-precio span {
+    /* negrita mas fuerte al precio solamente */
+    font-weight: 700;
+}
+
+.container-texto-inferior {
+    /* contenedor de los elementos de la parte inferior
+    de la informacion del equipaje */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.container-texto-inferior a {
+    /* estilos de la etiqueta a que tiene el texto de editar */
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.container-texto-inferior a:hover {
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
+    text-decoration: underline;
+}
+
+.container-abvertencias-equipaje {
+    /* contenedor de los elementos de informacion de abvertencia del equipaje
+    y el boton de continuar*/
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 150px;
+}
+
+.container-elementos-abvertencia-equipaje {
+    /* contenedor con el borde naranja de los elementos de advertencia */
+    background-color: #FAFFFF;
+    width: 71%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 22px;
+    border: 2px solid #B56B2A;
+    border-radius: 0.7rem;
+    gap: 15px;
+}
+
+.p-equipaje-en-cabina {
+    /* texto de informacion de equipaje den cabina */
+    display: flex;
+    align-items: center;
+    color: #707070;
+    font-size: 17px;
+    font-weight: 500;
+    gap: 5px;
+}
+
+.p-equipaje-en-cabina span {
+    /* en negrita el tipo de equipaje */
+    font-weight: 600;
+    font-size: 18px;
+    color: #172D43;
+}
+
+.p-equipaje-en-bodega {
+    /* texto de informacion del equipaje en bodega */
+    margin-left: 30px;
+    font-size: 17px;
+    color: #707070;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.p-equipaje-en-bodega span {
+    /* en negrita el titulo de equipaje en bodega */
+    font-size: 18px;
+    font-weight: 600;
+    color: #172D43;
+}
+
+.boton {
+    /* estilos del boton de continuar */
+    padding: 18px 20px;
+    background-color: #172D43;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-abvertencias-equipaje a {
+    /* se le quita los estilos a la etiqueta a */
+    text-decoration: none;
+}
+
 
 @media(max-width: 1350px) {
 
@@ -110,6 +323,22 @@ body {
     .boton_moneda {
         display: none !important;
     }
+
+    .container-elementos-abvertencia-equipaje{
+        width: 100%;
+    }
+
+    .container-abvertencias-equipaje {
+        /* contenedor de los elementos de informacion de abvertencia del equipaje
+    y el boton de continuar*/
+        gap: 20px;
+    }
+
+    .p-equipaje-en-bodega {
+        /* texto de informacion del equipaje en bodega */
+        line-height: 1.5;
+    }
+
 }
 
 
@@ -154,5 +383,127 @@ body {
     .separacion {
         /* separación del formulario al la parte superior del header */
         height: 70px;
+    }
+
+    .container-personaliza-tu-viaje {
+        /* contenedor de los elementos del titulo */
+        gap: 20px;
+    }
+
+
+    .personaliza-tu-viaje {
+        /* texto personalisa tu viaje */
+        font-size: 1.5rem;
+    }
+
+    .container-icono-equipaje img {
+        /* tamaño del icono de la maleta */
+        height: 24px;
+    }
+
+    .equipaje {
+        /* texto equipaje que esta con el icono */
+        font-size: 1rem;
+    }
+
+    .p-compra-equipaje {
+        /* parrafo de compra ahora */
+        font-size: 0.9rem;
+    }
+
+    .container-info-equipaje {
+        /* contenedor de la informacion para comprar mas equipaje */
+        width: 100%;
+        /* del tamaño de toda la pantalla */
+    }
+
+    .container-equipaje-de-mano-y-bodega {
+        /* Contenedor de los elementos de 
+    equipaje de mano y bodeaga con la imagen del turista */
+        padding: 20px;
+
+        >img {
+            width: 130px;
+        }
+    }
+
+    .p-equipaje-mano-bodega {
+        /* texto de equipaje de mano y de bodega (el tiitulo) */
+        font-size: 0.8rem;
+    }
+
+    .p-revisa-tu-equipaje {
+        /* texto de revisa tu equipaje */
+        font-size: 0.7rem;
+    }
+
+    .p-desde {
+        /* texto desde */
+        font-size: 0.8rem;
+    }
+
+    .p-precio {
+        /* texto del precio */
+        font-size: 1rem;
+    }
+
+    .container-texto-inferior a {
+        /* estilos de la etiqueta a que tiene el texto de editar */
+        font-size: 0.8rem;
+
+        >img {
+            height: 15px;
+        }
+
+    }
+
+    .container-abvertencias-equipaje{
+        gap: 10px;
+    }
+
+    .container-elementos-abvertencia-equipaje {
+        /* contenedor con el borde naranja de los elementos de advertencia */
+        padding: 15px 25px;
+        border-radius: 0.7rem;
+        gap: 15px;
+    }
+
+    .p-equipaje-en-cabina {
+        /* texto de informacion de equipaje den cabina */
+        font-size: 0.7rem;
+
+        img{
+            height: 20px;
+        }
+    }
+
+    .p-equipaje-en-cabina span {
+        /* en negrita el tipo de equipaje */
+        font-weight: 600;
+        font-size: 0.7rem;
+        color: #172D43;
+    }
+
+    .p-equipaje-en-bodega {
+        /* texto de informacion del equipaje en bodega */
+        margin-left: 25px;
+        font-size: 0.6rem;
+        line-height: 1.2;
+        text-align: justify;
+    }
+
+    .p-equipaje-en-bodega span {
+        /* en negrita el titulo de equipaje en bodega */
+        font-size: 0.8rem;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #172D43;
+    }
+
+    .boton {
+        /* estilos del boton de continuar */
+        padding: 13px 15px;
+        border-radius: 0.7rem;
+        font-size: 0.7rem;
     }
 }
