@@ -1,0 +1,378 @@
+* {
+    /* estilos para resetear la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* para scroll suave entre secciones*/
+    font-family: Montserrat, sans-serif;
+    /* tipo de letra de la pagina */
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.header {
+    /* Estilos del header de la pagina */
+    background-color: #172D43;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo_flynova {
+    /* tamaño del logo del header */
+    width: 250px;
+}
+
+.icono_user {
+    /* tamaño del icono de user */
+    height: 24px;
+}
+
+.menu_navegacion {
+    /* estilos del menu de navegacion entre las secciones */
+    color: white;
+}
+
+.container_botones_header {
+    /* contenedor de los botones de moneda y de iniciar
+    sesion */
+    display: flex;
+    align-items: center;
+
+}
+
+.boton_moneda {
+    /* estilos del boton moneda */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 140px;
+}
+
+.boton_iniciar_sesion {
+    /* estilos del boton iniciar sesion */
+    display: flex;
+    align-items: center;
+    width: 165px;
+    height: 45px;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    p {
+        width: 120px;
+    }
+}
+
+.boton_iniciar_sesion:hover {
+    /* estilos de cuando se hace hocer en el boton de 
+    iniciar sesion */
+    background-color: transparent;
+    filter: invert(100%);
+    border: 2px solid black;
+    transform: translateY(-3px);
+    box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.boton_iniciar_sesion:active {
+    /* se reduce el la escala del boton cuando se le 
+    da click para dar la sensacion que se dio click */
+    scale: 0.95;
+}
+
+.separacion {
+    /* separación del formulario al la parte superior del header */
+    height: 80px;
+}
+
+
+
+
+main {
+    /* contenedor principal de los elementos */
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.Pagar-y-confirmar-reserva {
+    /* texto de confirmar y pagar reserva */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+form {
+    /* estilos del formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    border: 2px solid #9999;
+    padding: 40px;
+    border-radius: 0.7rem;
+    background-color: rgba(217, 217, 217, 0.4);
+}
+
+.p-datos-tarjeta,
+.p-fecha-expiracion,
+.p-datos-facturacion {
+    /* estilo de los subtitulos del formulario */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-datos-tarjeta-iconos {
+    /* contenedor de los iconos y el texto datos de la tarjeta */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.container-iconos {
+    /* contenedor de los iconos */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.container-nombre-titular-numero-tarjeta,
+.container-mes-año-cvv,
+.container-correo-direccion,
+.container-pais-ciudad {
+    /* contenedor de los inputs del 
+    nombre del titular y el numero de la tarjeta */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.conatiner_para_movil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.conatiner-input-titular,
+.container-input-numero-tarjeta {
+    /* contenedor de los inputs de titular de la 
+    tarjeta y del numero de la tarjeta */
+    position: relative;
+
+    img {
+        height: 22px;
+    }
+}
+
+.input-nombre-titular {
+    /* estilos del input del titular de la persona */
+    height: 50px;
+    width: 510px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 20px 5px 42px;
+    font-size: 16px;
+}
+
+.conatiner-input-titular img {
+    /* posicion del incono dentro del input del titular de la tarjeta */
+    position: absolute;
+    top: 43%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.input-numero-tarjeta {
+    /* estilos de los inputs del numero de la tarjeta */
+    height: 50px;
+    width: 510px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 20px 5px 56px;
+    font-size: 16px;
+}
+
+.container-input-numero-tarjeta img {
+    /* posicion del icono de tarjeta dentro del input del numero de la tarjeta */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.input-mes,
+/* estilo de los inpputs de año y mes de expiracion */
+.input-año {
+    height: 50px;
+    width: 400px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.input-cvv {
+    /* estilo del input de cvv */
+    height: 50px;
+    width: 200px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.input-correo,
+.input-direccion,
+.input-pais,
+.input-ciudad {
+    /* estilos de os inputs de correo, direccion, pais y ciudad */
+    height: 50px;
+    width: 510px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.container-terminos-boton {
+    /* contenedor de los terminos y condiciones y el
+    boton de continuar */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.container-terminos{
+    margin-left: 10px;
+}
+
+.container-terminos input {
+    /* Tamaño del input tipo check */
+    scale: 1.5;
+    margin-right: 7px;
+}
+
+label {
+    /* tamaño del label de terminos y condiciones */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.boton-confirmar {
+    /* estilos del boton de confirmar y pagar */
+    margin-top: 50px;
+    margin-right: 160px;
+    padding: 18px 20px;
+    background-color: #172D43;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-ver-resumen {
+    /* contenedor de los elementos de ver resumen */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-ver-resumen a {
+    /* estiilo de la etiqueta de  ver resumen del vuelo */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container-ver-resumen a:hover {
+    text-decoration: underline;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+@media(max-width: 1350px) {
+
+    /* HEADER */
+    .boton_moneda {
+        display: none !important;
+    }
+}
+
+
+
+@media(max-width: 500px) {
+
+    /* HEADER */
+    /* se ajusta el tamaño del logo */
+    .logo_flynova {
+        width: 180px;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .boton_iniciar_sesion {
+        /* estilos del boton iniciar sesion */
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        gap: 10px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 8px 10px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        p {
+            width: fit-content;
+        }
+
+        img {
+            height: 18px;
+        }
+    }
+
+    .separacion {
+        /* separación del formulario al la parte superior del header */
+        height: 70px;
+    }
+
+}
