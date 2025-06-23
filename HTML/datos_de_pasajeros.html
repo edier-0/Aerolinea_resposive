@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flynova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/datos_de_pasajeros.css">
+</head>
+
+<body>
+    <header class="header">
+        <div id="inicio" class="container_logo">
+            <a href="../index.html"><img class="logo_flynova" src="../Assets/compartidos/Logos/logo flynova gris.png"
+                    alt="Logo flynova"></a>
+        </div>
+        <div class="container_botones_header">
+            <div class="boton_moneda">
+                <img src="../Assets/compartidos/imagenes/circulo_colombia.png" alt="imagen de bandera del pais">
+                COP - $
+            </div>
+            <button class="boton_iniciar_sesion">
+                <p>Inisiar sesión</p>
+                <img class="icono_user" src="../Assets/compartidos/iconos/user.svg" alt="icono de user">
+            </button>
+        </div>
+    </header>
+    <div class="separacion">
+    </div>
+
+    <main>
+        <p class="p-pasajeros">Pasajeros</p>
+        <div class="container-formulario">
+            <form action="">
+                <div class="tipo-pasajero">
+                    <img src="../iconos/user cuadrado.svg" alt="">
+                    <p>Adulto</p>
+                </div>
+                <div class="container-genero-nombre-apellido">
+                    <input class="input-genero" list="generos" placeholder="Genero">
+                    <datalist id="generos">
+                        <option value="Masculino"></option>
+                        <option value="Femenino"></option>
+                    </datalist>
+                    <input class="input-nombre" type="text" placeholder="Nombre">
+                    <input class="input-apellido" type="text" placeholder="Apellido">
+                </div>
+                <div class="container-fecha_nacimiento-nacionalidad">
+                    <input type="date" class="input-fecha">
+                    <input list="nacionalidad" class="input-nacionalidad" placeholder="Nacionalidad">
+                    <datalist id="nacionalidad">
+                        <option value="Colombia"></option>
+                        <option value="Venezuela"></option>
+                        <option value="EE.UU"></option>
+                        <option value="Mexico"></option>
+                    </datalist>
+                </div>
+                <div class="container-tipo_documento-documento">
+                    <input list="tipo-documento" class="input-tipo-documento" placeholder="Tipo de documento">
+                    <datalist id="tipo-documento">
+                        <option value="CC"></option>
+                        <option value="TI"></option>
+                        <option value="PPT"></option>
+                    </datalist>
+                    <input type="text" class="input-documento" placeholder="Documento">
+                </div>
+                <p class="informacion-de-contacto">
+                    Informacion de contacto
+                </p>
+                <div class="container-correo-codigo-telefono">
+                    <input type="email" class="input-correo" placeholder="Correo electronico">
+                    <input list="codigos" class="input-codigo" placeholder="Código">
+                    <datalist id="codigos">
+                        <option value="+57"></option>
+                        <option value="+34"></option>
+                        <option value="+44"></option>
+                    </datalist>
+                    <input type="text" class="input-telefono" placeholder="Teléfono">
+                </div>
+            </form>
+        </div>
+        <div class="container-check">
+            <div class="container-check-terminos">
+                <input type="checkbox" id="tratamiento-datos" class="input-tratamiento-datos">
+                <label for="tratamiento-datos">Autorizo el tratamiento de mis datos personales conforme a la política de
+                    privacidad</label>
+            </div>
+            <div class="container-check-notificaciones">
+                <input type="checkbox" id="notificaciones" class="input-notificaciones">
+                <label for="notificaciones">Acepto el uso de mis datos personales para recibir promociones, ofertas y
+                    novedades que Flynova tiene para mi</label>
+            </div>
+        </div>
+        <div class="container-boton">
+            <a href="pagar-y-confirmar-reserva.html">
+            <p>continuar</p>
+            </a>
+        </div>
+    </main>
+
+</body>
+
+</html>
