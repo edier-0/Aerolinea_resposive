@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flynova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/pagar_confirmar_reserva.css">
+</head>
+
+<body>
+    <header class="header">
+        <div id="inicio" class="container_logo">
+            <a href="../index.html"><img class="logo_flynova" src="../Assets/compartidos/Logos/logo flynova gris.png"
+                    alt="Logo flynova"></a>
+        </div>
+        <div class="container_botones_header">
+            <div class="boton_moneda">
+                <img src="../Assets/compartidos/imagenes/circulo_colombia.png" alt="imagen de bandera del pais">
+                COP - $
+            </div>
+            <button class="boton_iniciar_sesion">
+                <p>Inisiar sesión</p>
+                <img class="icono_user" src="../Assets/compartidos/iconos/user.svg" alt="icono de user">
+            </button>
+        </div>
+    </header>
+    <div class="separacion">
+    </div>
+    <main>
+        <p class="Pagar-y-confirmar-reserva">Pagar y confirmar reserva</p>
+        <div class="container-formulario">
+            <form action="">
+                <div class="container-datos-tarjeta-iconos">
+                    <p class="p-datos-tarjeta">
+                        Datos de la tarjeta
+                    </p>
+                    <div class="container-iconos">
+                        <img src="../Assets/pagar_confirmar_reserva/tarjeta.svg" alt="">
+                        <img src="../Assets/pagar_confirmar_reserva/tarjeta-visa.svg" alt="">
+                        <img src="../Assets/pagar_confirmar_reserva/tarjeta-am.svg" alt="">
+                        <img src="../Assets/pagar_confirmar_reserva/tarjeta-discover.svg" alt="">
+                    </div>
+                </div>
+                <div class="container-nombre-titular-numero-tarjeta">
+                    <div class="conatiner-input-titular">
+                        <img src="../Assets/compartidos/iconos/user.svg" alt="">
+                        <input placeholder="Nombre del titular" type="text" class="input-nombre-titular">
+                    </div>
+                    <div class="container-input-numero-tarjeta">
+                        <img src="../Assets/pagar_confirmar_reserva/tarjeta del input.svg" alt="">
+                        <input placeholder="Numero de tarjeta" type="text" class="input-numero-tarjeta">
+                    </div>
+                </div>
+                <p class="p-fecha-expiracion">
+                    Fecha de expiracion
+                </p>
+
+                <div class="container-mes-año-cvv">
+                    <input type="month" class="input-mes" placeholder="Mes">
+                    <div class="conatiner_para_movil">
+                        <input list="año" class="input-año" placeholder="Año">
+                        <datalist id="año">
+                            <option value="2025"></option>
+                            <option value="2024"></option>
+                            <option value="2023"></option>
+                            <option value="2022"></option>
+                            <option value="2021"></option>
+                            <option value="2020"></option>
+                            <option value="2019"></option>
+                            <option value="2018"></option>
+                            <option value="2017"></option>
+                            <option value="2016"></option>
+                            <option value="2015"></option>
+                        </datalist>
+                        <input type="text" class="input-cvv" placeholder="CVV">
+                    </div>
+                </div>
+                <p class="p-datos-facturacion">
+                    Datos de facturación
+                </p>
+                <div class="container-correo-direccion">
+                    <input placeholder="Correo electrónico" type="email" class="input-correo">
+                    <input placeholder="Dirección de residencia" type="text" class="input-direccion">
+                </div>
+                <div class="container-pais-ciudad">
+                    <input list="pais" class="input-pais" placeholder="País">
+                    <datalist id="pais">
+                        <option value="Colombia"></option>
+                        <option value="Venezuela"></option>
+                        <option value="EE.UU"></option>
+                        <option value="Mexico"></option>
+                    </datalist>
+                    <input list="ciudad" class="input-ciudad" placeholder="Ciudad">
+                    <datalist id="ciudad">
+                        <option value="Fonseca"></option>
+                        <option value="Barrancas"></option>
+                        <option value="Hatonuevo"></option>
+                        <option value="Albania"></option>
+                    </datalist>
+                </div>
+            </form>
+        </div>
+        <div class="container-terminos-boton">
+            <div class="container-terminos">
+                <input type="checkbox" id="terminos">
+                <label for="terminos">Al continuar acepto los términos y condiciones de la compra</label>
+            </div>
+            <p class="boton-confirmar">
+                Confirmar y pagar
+            </p>
+        </div>
+        <div class="container-ver-resumen">
+            <a href="">
+                <p class="p-ver-resumen">Ver resumen de compra</p> <img
+                    src="../Assets/compartidos/iconos/flecha-right.svg" alt="">
+            </a>
+        </div>
+
+    </main>
+</body>
+
+</html>
