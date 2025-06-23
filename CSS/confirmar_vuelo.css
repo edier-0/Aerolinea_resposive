@@ -82,8 +82,7 @@ body {
     }
 }
 
-.boton_iniciar_sesion:hover,
-.boton_iniciar_sesion_movil:hover {
+.boton_iniciar_sesion:hover {
     /* estilos de cuando se hace hocer en el boton de 
     iniciar sesion */
     background-color: transparent;
@@ -104,9 +103,628 @@ body {
     height: 80px;
 }
 
-@media(max-width: 1350px){
-        /* HEADER */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+form {
+    /* formulario de busqueda */
+    padding: 20px;
+    display: flex;
+    width: 90%;
+}
+
+.container-busqueda {
+    /* contenedor de los elementos del formulario */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.vuelo-ida,
+/* posicion relativa para los contenedores de los inputs de vuelo de ida,
+destino y cantidad de personas para ubicar los iconos dentro */
+.destino,
+.cantidad-personas {
+    position: relative;
+}
+
+.vuelo-ida input,
+/* estilos de los inputs de vuelo de ida y de destino */
+.destino input {
+    font-size: 18px;
+    width: 240px;
+    height: 50px;
+    border: 2px solid #999999;
+    border-radius: 0.5rem;
+    padding: 5px 5px 5px 40px;
+}
+
+.vuelo-ida img,
+/* estilos de los iconos de los inputs */
+.destino img,
+.cantidad-personas img {
+    height: 24px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.fecha {
+    /* estilos del input de tipo date para la fecha */
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid #999999;
+    border-radius: 0.5rem;
+    padding: 5px 40px 5px 40px;
+}
+
+.cantidad-personas input {
+    /* estilos del input de tipo numerico para la cantidad de personas */
+    font-size: 18px;
+    width: 90px;
+    height: 50px;
+    border: 2px solid #999999;
+    border-radius: 0.3rem;
+    padding: 5px 5px 5px 40px;
+}
+
+form button {
+    /* estilos del boton de buscar del formulario */
+    height: 50px;
+    width: 100px;
+    border-radius: 0.5rem;
+    background-color: #172D43;
+    color: white;
+    font-size: 16px;
+}
+
+.container-info-viaje {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding-left: 9vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    h2 {
+        font-weight: 500;
+    }
+}
+
+.container-editar-seleccion {
+    /* contenedor del texto de editar seleccion */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.container-editar-seleccion a {
+    /* etiqueta de editar seleccion */
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    gap: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container-editar-seleccion a:hover {
+    text-decoration: underline;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.container-vuelos {
+    /* contenedor de los vuelos a las diferentes horas y precios */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.vuelo {
+    /* estilo de los banner de los vuelos */
+    width: 1200px;
+    border: 2px solid #03A691;
+    border-radius: 1rem;
+    background-color: #FAFFFF;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 10px -5px #03A691;
+    position: relative;
+}
+
+/* contenedor de los datos del vuelo del avion y la linea*/
+.container_datos_vuelo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contenedor del precio del vuelo con el parrafo de precio desde */
+.container_precio_desde {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-vuelos a {
+    /* etiqueta para navegar al siguiente formulario */
+    text-decoration: none;
+    color: inherit;
+}
+
+/* margen en la parte superior de las horas para centrarlos en el banner */
+.hora-ciudad-llegada {
+    margin-top: 25px;
+}
+
+.hora-salida,
+.hora-llegada {
+    /* estilos del texto de la hora de salida y llegada */
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.ciudad-salida,
+/* estilos de los textos de la ciudad de salida y destino */
+.ciudad-llegada {
+    font-size: 18px;
+    font-weight: 500;
+    color: #737373;
+}
+
+.container-linea-vuelo {
+    /* contenedor de los elementos de las lineas de vuelo de 
+    salida y destino con el icono y los puntos */
+    display: flex;
+    align-items: center;
+}
+
+.tipo-vuelo {
+    /* tamaño del texto de vuelo directo o si hay paradas */
+    font-size: 14px;
+}
+
+.duracion {
+    /* tamnño y estilos del tiempo estimado del vuelo */
+    font-size: 18px;
+    font-weight: 500;
+    color: #737373;
+}
+
+.avion {
+    /* tamaño del icono del avion */
+    height: 40px;
+}
+
+.container-avion-duracion {
+    /* contenedoor del icono del avion con el texto de directo y la duracion del vuelo */
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-desde {
+    /* parrafo desde */
+    font-size: 14px;
+    font-weight: 500;
+    color: #737373;
+}
+
+.p-cop {
+    /* parrafo cop */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.container-desde-cop {
+    /* conteedor de los parrafos desde y cop */
+    font-size: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-precio {
+    /* contenedor del precio y el cop */
+    display: flex;
+    gap: 10px;
+}
+
+.precio {
+    /* estilo del precio */
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.container-vuelo-seleccionado {
+    /* contenedor del elemento que indica vuelo seleccionado */
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #03A691;
+    color: white;
+    font-weight: 600;
+    border-radius: 0 0.7rem 0 0.8rem;
+}
+
+.container-sin-sorpresas-precio {
+    /* contenedor de los elementos de sin sorpresas, precio y boton de continuar */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+    width: 80%;
+}
+
+.container-sin-sorpresas-precio a {
+    /* quitandole el estilo de el estilo a la etiqueta */
+    text-decoration: none;
+}
+
+.container-sin-sorpresas {
+    /* contenedor de los elementos de sin sorpresas */
+    border: 2px solid #03A691;
+    border-radius: 1rem;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFFFF;
+    gap: 5px;
+}
+
+.container-titulo-icono {
+    /* contenedor del icono y el titulo de sin sorpresas */
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.p-sin-sorpresas {
+    /* negrita al texto sin sorpresas */
+    font-weight: 600;
+}
+
+.p-impuestos-pagos {
+    /* estilo al texto de los impuestos pagos con el precio del vuelo */
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #737373;
+}
+
+.container-total-reserva {
+    /* contenedor del precio total y el texto */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* contenedor del precio total y del boton para responsive */
+.container_total_boton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-total {
+    /* estilo al texto de precio total */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.total {
+    /* tamaño al precio */
+    font-size: 30px;
+}
+
+.total span {
+    /* negrita al total */
+    font-weight: 600;
+}
+
+.boton {
+    /* estilos al boton de continuar */
+    padding: 18px 20px;
+    background-color: #172D43;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+
+@media(max-width: 1350px) {
+
+    /* HEADER */
     .boton_moneda {
         display: none !important;
     }
+
+    .header {
+        /* Estilos del header de la pagina */
+        width: 100vw;
+
+    }
+
+    /* FORMULARIO */
+
+    .vuelo-ida input,
+    /* estilos de los inputs de vuelo de ida y de destino */
+    .destino input {
+        font-size: 1rem;
+        width: 150px;
+        height: 45px;
+        border: 2px solid #999999;
+    }
+
+    .vuelo-ida img,
+    /* estilos de los iconos de los inputs */
+    .destino img,
+    .cantidad-personas img {
+        height: 22px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .fecha {
+        /* estilos del input de tipo date para la fecha */
+        font-size: 1rem;
+        width: 150px;
+        height: 45px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px;
+    }
+
+    .cantidad-personas input {
+        /* estilos del input de tipo numerico para la cantidad de personas */
+        font-size: 18px;
+        width: 80px;
+        height: 45px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+    }
+
+    form button {
+        /* estilos del boton de buscar del formulario */
+        height: fit-content;
+        width: fit-content;
+        padding: 11px 10px;
+        border-radius: 0.5rem;
+        background-color: #172D43;
+        color: white;
+        font-size: 16px;
+    }
+
+    .container-info-viaje {
+        font-size: 0.8rem;
+    }
+
+    /* VUELO */
+    .linea-punteada {
+        width: 150px;
+    }
+
+    .vuelo {
+        /* estilo de los banner de los vuelos */
+        width: 100%;
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 30px;
+    }
+
+
+    .container-sin-sorpresas-precio {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    /* HEADER */
+    /* se ajusta el tamaño del logo */
+    .logo_flynova {
+        width: 180px;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .boton_iniciar_sesion {
+        /* estilos del boton iniciar sesion */
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        gap: 10px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 8px 10px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        p {
+            width: fit-content;
+        }
+
+        img {
+            height: 18px;
+        }
+    }
+
+    .separacion {
+        /* separación del formulario al la parte superior del header */
+        height: 70px;
+    }
+
+    form {
+        /* formulario de busqueda */
+        padding: 20px 0 0 0;
+        display: flex;
+        width: 100%;
+    }
+
+    .vuelo-ida input,
+    /* estilos de los inputs de vuelo de ida y de destino */
+    .destino input {
+        font-size: 0.8rem;
+        width: 100px;
+        height: 40px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px 5px 5px 30px;
+    }
+
+    .vuelo-ida img,
+    /* estilos de los iconos de los inputs */
+    .destino img,
+    .cantidad-personas img {
+        height: 16px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+    }
+
+    .fecha {
+        /* estilos del input de tipo date para la fecha */
+        font-size: 0.7rem;
+        width: 100px;
+        height: 40px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px;
+    }
+
+    .cantidad-personas input {
+        /* estilos del input de tipo numerico para la cantidad de personas */
+        font-size: 0.9rem;
+        width: 60px;
+        height: 40px;
+        border: 2px solid #999999;
+        border-radius: 0.5rem;
+        padding: 5px 5px 5px 30px;
+    }
+
+    form button {
+        /* estilos del boton de buscar del formulario */
+        height: fit-content;
+        width: fit-content;
+        padding: 11px 5px;
+        border-radius: 0.5rem;
+        background-color: #172D43;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+
+
+
+    .container-info-viaje {
+        width: 100%;
+        padding-left: 5px;
+        font-size: 0.5rem;
+    }
+
+    /* contenedor del avion en vuelo y los destinos de cada punta */
+    .container_datos_vuelo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* contenedor del precio y desde */
+    .container_precio_desde {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .hora-ciudad-salida,
+    /* margen en la parte superior de las horas para centrarlos en el banner */
+    .hora-ciudad-llegada {
+        margin-top: 25px;
+    }
+
+    .hora-salida,
+    .hora-llegada {
+        /* estilos del texto de la hora de salida y llegada */
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .linea-punteada {
+        width: 50px;
+        border-bottom: 2px dashed #000;
+    }
+
+    .vuelo {
+        /* estilo de los banner de los vuelos */
+        padding: 30px 20px;
+
+    }
+
+    .avion {
+        /* tamaño del icono del avion */
+        height: 30px;
+    }
+
+    .vuelo h2 {
+        /* estilos del precio de los vuelos */
+        margin-top: 47px;
+        font-size: 1.6rem;
+    }
+    
+    .precio{
+        font-size: 2rem;
+    }
+
+    
+
+    .container-sin-sorpresas {
+        /* contenedor de los elementos de sin sorpresas */
+        padding: 12px 10px;
+    }
+
+    .container-sin-sorpresas p{
+        /* contenedor de los elementos de sin sorpresas */
+        font-size: 0.8rem;
+    }
+
 }

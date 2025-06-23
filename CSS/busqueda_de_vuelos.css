@@ -483,8 +483,6 @@ footer {
         width: 150px;
         height: 45px;
         border: 2px solid #999999;
-        border-radius: 0.5rem;
-        padding: 5px 5px 5px 40px;
     }
 
     .vuelo-ida img,
@@ -495,7 +493,6 @@ footer {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 10px;
     }
 
     .fecha {
@@ -515,7 +512,6 @@ footer {
         height: 45px;
         border: 2px solid #999999;
         border-radius: 0.5rem;
-        padding: 5px 5px 5px 40px;
     }
 
     form button {
