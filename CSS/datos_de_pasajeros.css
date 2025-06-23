@@ -1,0 +1,336 @@
+* {
+    /* estilos para resetear la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* para scroll suave entre secciones*/
+    font-family: Montserrat, sans-serif;
+    /* tipo de letra de la pagina */
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.header {
+    /* Estilos del header de la pagina */
+    background-color: #172D43;
+    display: flex;
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-between;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo_flynova {
+    /* tamaño del logo del header */
+    width: 250px;
+}
+
+.icono_user {
+    /* tamaño del icono de user */
+    height: 24px;
+}
+
+.menu_navegacion {
+    /* estilos del menu de navegacion entre las secciones */
+    color: white;
+}
+
+.container_botones_header {
+    /* contenedor de los botones de moneda y de iniciar
+    sesion */
+    display: flex;
+    align-items: center;
+
+}
+
+.boton_moneda {
+    /* estilos del boton moneda */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 140px;
+}
+
+.boton_iniciar_sesion {
+    /* estilos del boton iniciar sesion */
+    display: flex;
+    align-items: center;
+    width: 165px;
+    height: 45px;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    p {
+        width: 120px;
+    }
+}
+
+.boton_iniciar_sesion:hover {
+    /* estilos de cuando se hace hocer en el boton de 
+    iniciar sesion */
+    background-color: transparent;
+    filter: invert(100%);
+    border: 2px solid black;
+    transform: translateY(-3px);
+    box-shadow: 0 1px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.boton_iniciar_sesion:active {
+    /* se reduce el la escala del boton cuando se le 
+    da click para dar la sensacion que se dio click */
+    scale: 0.95;
+}
+
+.separacion {
+    /* separación del formulario al la parte superior del header */
+    height: 80px;
+}
+
+
+
+main {
+    /* contenedor de todos los elementos principales */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    padding-left: 100px;
+    margin-bottom: 80px;
+}
+
+.p-pasajeros {
+    /* estilos al titulo de pasajeros */
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container-formulario {
+    /* contenedor del foormulario se le da un ancho del 100%
+    para ponerle los bordes al formulario con el fondo */
+    width: 100%;
+}
+
+form {
+    /* estilos del formulario */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    background-color: rgba(217, 217, 217, 0.4);
+    width: fit-content;
+    padding: 30px 50px;
+}
+
+/* .alinear {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    background-color: rgba(255, 0, 0, 0.1);
+} */
+
+.tipo-pasajero {
+    /* contenedor del icono y el texto de pasajero */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tipo-pasajero img {
+    /* alineando el icono con el texto */
+    margin-bottom: 5px;
+}
+
+.container-genero-nombre-apellido,
+.container-fecha_nacimiento-nacionalidad,
+.container-tipo_documento-documento,
+.container-correo-codigo-telefono {
+    /* contenedor de todos los inputs */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-genero {
+    /* input de genero */
+    height: 50px;
+    width: 200px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px
+}
+
+.input-nombre,
+/* estilos de los inputs de nombre y apellido */
+.input-apellido {
+    height: 50px;
+    width: 400px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px
+}
+
+.input-fecha,
+.input-nacionalidad,
+.input-tipo-documento,
+.input-documento {
+    /* estilos de los inputs de fecha, nacionalidad,
+    tipo de documento y documento */
+    height: 50px;
+    width: 508px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px
+}
+
+.informacion-de-contacto {
+    /* parrafo de informacion de contacto */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.input-correo {
+    /* estilos del input de correo */
+    height: 50px;
+    width: 450px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px
+}
+
+.input-codigo {
+    /* estilo del inut de codigo de telfono */
+    height: 50px;
+    width: 200px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px
+}
+
+.input-telefono {
+    /* estilo del input de telefono */
+    height: 50px;
+    width: 350px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    padding: 5px 15px 5px 15px;
+    font-size: 16px
+}
+
+.container-check {
+    /* contenedor de los inputs tipo check y los label */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.container-check input {
+    /* tamaño de los inputs tipo check */
+    scale: 1.5;
+    margin-right: 5px;
+}
+
+.container-boton {
+    /* contenedor del boton de continuar */
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    padding-right: 250px;
+    justify-content: end;
+}
+
+.container-boton a {
+    /* se le quitan los estilos de la etiqueta a */
+    text-decoration: none
+}
+
+.container-boton p {
+    /* estilos del boton de continuar */
+    padding: 18px 20px;
+    background-color: #172D43;
+    border-radius: 0.7rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+@media(max-width: 1350px) {
+
+    /* HEADER */
+    .boton_moneda {
+        display: none !important;
+    }
+}
+
+@media(max-width: 500px) {
+
+    /* HEADER */
+    /* se ajusta el tamaño del logo */
+    .logo_flynova {
+        width: 180px;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .boton_iniciar_sesion {
+        /* estilos del boton iniciar sesion */
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        gap: 10px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 8px 10px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+
+        p {
+            width: fit-content;
+        }
+
+        img {
+            height: 18px;
+        }
+    }
+
+    .separacion {
+        /* separación del formulario al la parte superior del header */
+        height: 70px;
+    }
+}
