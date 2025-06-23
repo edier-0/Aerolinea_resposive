@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +31,114 @@
     </header>
     <div class="separacion">
     </div>
-    
+
+    <main>
+        <form action="">
+            <div class="container-busqueda">
+                <div class="vuelo-ida">
+                    <img src="../Assets/compartidos/iconos/avion despegando1.svg" alt="">
+                    <input list="ciudades" value="Bogotá">
+                    <datalist id="ciudades">
+                        <option value="Medellín"></option>
+                        <option value="Pereira"></option>
+                        <option value="Bogotá"></option>
+                    </datalist>
+                </div>
+                <div class="destino">
+                    <img src="../Assets/compartidos/iconos/Avion aterrizando.svg" alt="">
+                    <input list="ciudades" value="Medellín">
+                    <datalist id="ciudades">
+                        <option value="Medellín"></option>
+                        <option value="Pereira"></option>
+                        <option value="Bogotá"></option>
+                    </datalist>
+                </div>
+                <input class="fecha" type="date">
+                <div class="cantidad-personas">
+                    <img src="../Assets/compartidos/iconos/user-add.svg" alt="">
+                    <input type="number" min="1" value="1">
+                </div>
+                <button>
+                    <p>Buscar</p>
+                </button>
+            </div>
+        </form>
+        <div class="container-info-viaje">
+            <h1>Resumen de tu viaje</h1>
+            <h2>Vuelo de ida: Bogotá a Medellín</h2>
+        </div>
+
+
+        <div class="container-vuelos">
+            <div class="container-editar-seleccion">
+                <a href="busqueda-vuelo.html">
+                    <img src="../Assets/confirmar_vuelo/Lapiz.svg" alt="">
+                    <p>Editar seleccion</p>
+                </a>
+            </div>
+            <div class="vuelo">
+                <div class="container_datos_vuelo">
+                    <div class="hora-ciudad-salida">
+                        <p>Jue. 24 abr.</p>
+                        <p class="hora-salida">5:26 AM</p>
+                        <p class="ciudad-salida">BOG</p>
+                    </div>
+                    <div class="container-linea-vuelo">
+                        <img class="punto" src="../Assets/confirmar_vuelo/punto.svg" alt="">
+                        <img class="linea-punteada" src="../Assets/confirmar_vuelo/Linea-punteada.svg" alt="">
+                        <div class="container-avion-duracion">
+                            <p class="tipo-vuelo">Directo</p>
+                            <img class="avion" src="../Assets/confirmar_vuelo/avion_volando.svg" alt="">
+                            <p class="duracion">1 h</p>
+                        </div>
+                        <img class="linea-punteada" src="../Assets/confirmar_vuelo/Linea-punteada.svg" alt="">
+                        <img class="punto" src="../Assets/confirmar_vuelo/punto.svg" alt="">
+                    </div>
+                    <div class="hora-ciudad-llegada">
+                        <p class="hora-llegada">6:26 AM</p>
+                        <p class="ciudad-llegada">MDE</p>
+                    </div>
+                </div>
+
+                <div class="container_precio_desde">
+                    <div class="container-desde-cop">
+                        <p class="p-desde">Precio por pasajero</p>
+                        <div class="container-precio">
+                            <p class="p-cop">COP</p>
+                            <p class="precio">239.250</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-vuelo-seleccionado">
+                    <img src="../Assets/confirmar_vuelo/circulo-verificacion.svg" alt="">
+                    <p> Vuelo seleccionado</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-sin-sorpresas-precio">
+            <div class="container-sin-sorpresas">
+                <div class="container-titulo-icono">
+                    <img src="../Assets/confirmar_vuelo/check-circulo-verde.svg" alt="">
+                    <p class="p-sin-sorpresas">¡Sin sorpresas!</p>
+                </div>
+                <p class="p-impuestos-pagos">Todos los impuestos están incluidos en el precio total </p>
+            </div>
+            <div class="container_total_boton">
+                <div class="container-total-reserva">
+                    <p class="p-total">Total de la reserva</p>
+                    <p class="total">COP <span>239.250</span></p>
+                </div>
+                <a href="equipaje.html">
+                    <p class="boton">
+                        Continuar
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
 </body>
+
 </html>
