@@ -111,8 +111,7 @@ main {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 0 5vw;
     gap: 30px;
     margin-bottom: 50px;
 }
@@ -267,7 +266,7 @@ form {
     height: fit-content;
 }
 
-.container-terminos{
+.container-terminos {
     margin-left: 10px;
 }
 
@@ -286,7 +285,7 @@ label {
 .boton-confirmar {
     /* estilos del boton de confirmar y pagar */
     margin-top: 50px;
-    margin-right: 160px;
+    margin-right: 210px;
     padding: 18px 20px;
     background-color: #172D43;
     border-radius: 0.7rem;
@@ -328,6 +327,57 @@ label {
     .boton_moneda {
         display: none !important;
     }
+
+    main {
+        align-items: center;
+
+    }
+
+
+    .container-nombre-titular-numero-tarjeta,
+    .container-mes-año-cvv,
+    .container-correo-direccion,
+    .container-pais-ciudad {
+        /* contenedor de los inputs del 
+    nombre del titular y el numero de la tarjeta */
+        flex-direction: column;
+    }
+
+    /* estilos del input de mes */
+    .input-mes {
+        width: 510px;
+    }
+
+    /* estilos del input de año */
+    .input-año {
+        width: 300px;
+    }
+
+    .input-cvv {
+        /* estilo del input de cvv */
+        width: 200px;
+    }
+
+    .container-terminos-boton {
+        /* contenedor de los terminos y condiciones y el
+    boton de continuar */
+        padding: 0 50px;
+    }
+
+
+    label {
+        /* tamaño del label de terminos y condiciones */
+        font-size: 1rem;
+    }
+
+    .boton-confirmar {
+        /* estilos del boton de confirmar y pagar */
+        margin-top: 50px;
+        margin-right: 0px;
+        padding: 15px 15px;
+        font-size: 1rem;
+    }
+
 }
 
 
@@ -373,6 +423,113 @@ label {
     .separacion {
         /* separación del formulario al la parte superior del header */
         height: 70px;
+    }
+
+    form {
+        /* estilos del formulario */
+        padding: 20px;
+    }
+
+    .Pagar-y-confirmar-reserva {
+        /* texto de confirmar y pagar reserva */
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+
+    .p-datos-tarjeta,
+    .p-fecha-expiracion,
+    .p-datos-facturacion {
+        /* estilo de los subtitulos del formulario */
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+
+    .conatiner-input-titular,
+    .container-input-numero-tarjeta {
+        /* contenedor de los inputs de titular de la 
+    tarjeta y del numero de la tarjeta */
+
+        img {
+            height: 20px;
+        }
+    }
+
+
+
+    .input-nombre-titular {
+        /* estilos del input del titular de la persona */
+        height: 45px;
+        width: 320px;
+        font-size: 1rem;
+    }
+
+    .input-numero-tarjeta {
+        /* estilos de los inputs del numero de la tarjeta */
+        height: 45px;
+        width: 320px;
+        font-size: 1rem;
+    }
+
+    /* estilos del input de mes */
+    .input-mes {
+        height: 45px;
+        width: 320px;
+        font-size: 1rem;
+    }
+
+    /* estilos del input de año */
+    .input-año {
+        height: 45px;
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .input-cvv {
+        /* estilo del input de cvv */
+        height: 45px;
+        width: 110px;
+        font-size: 1rem;
+    }
+
+    .input-correo,
+    .input-direccion,
+    .input-pais,
+    .input-ciudad {
+        /* estilos de os inputs de correo, direccion, pais y ciudad */
+        height: 50px;
+        width: 320px;
+        font-size: 1rem;
+    }
+
+    .container-terminos-boton {
+        /* contenedor de los terminos y condiciones y el
+    boton de continuar */
+        padding: 0 0px;
+    }
+
+
+    .container-terminos input {
+        /* Tamaño del input tipo check */
+        scale: 1.2;
+        margin-right: 7px;
+    }
+
+    label {
+        /* tamaño del label de terminos y condiciones */
+        font-size: 0.9rem;
+    }
+
+    .boton-confirmar {
+        /* estilos del boton de confirmar y pagar */
+        font-size: 0.9rem;
+    }
+
+    .container-ver-resumen a {
+        /* estiilo de la etiqueta de  ver resumen del vuelo */
+        font-size: 1rem;
     }
 
 }
