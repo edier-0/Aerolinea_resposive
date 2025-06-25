@@ -100,8 +100,298 @@ body {
 
 .separacion {
     /* separación del formulario al la parte superior del header */
-    height: 80px;
+    height: 12vh;
 }
+
+
+
+
+.fondo {
+    /* contenedor de la imagen de fondo */
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.fondo img {
+    /* imagen de fondo */
+    width: 100%;
+}
+
+.mensaje-viaja-con-tu-mascota {
+    /* contenedor del mensaje de viaja con tu mascota */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    padding: 30px 40px;
+    width: 450px;
+    border-radius: 0.7rem;
+    left: 60px;
+    top: 62%;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+.mensaje-viaja-con-tu-mascota h2 {
+    /* titulo del mensaje */
+    font-size: 26px;
+}
+
+.div {
+    /* linea que esta debajo del titulo */
+    width: 285px;
+    border: 2.5px solid rgba(128, 15, 113, 1);
+    border-radius: 1rem;
+}
+
+.mensaje-viaja-con-tu-mascota p {
+    /* parrafo de viaja con tu mascota */
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+main {
+    /* contenedor principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10vw;
+    margin-bottom: 70px;
+}
+
+.container-vuela-con-tu-mascota {
+    /* contenedor del banner vuela con tu mascota */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 304px;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 90px;
+}
+
+.container-vuela-con-tu-mascota img {
+    /* ubicando la imagen en el banner */
+    margin-top: 8px;
+    margin-left: -4px;
+}
+
+.mensaje-vuela-con-tu-mascota {
+    /* contenedor dentro del banner para ubicar el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: 740px;
+    padding: 45px 40px;
+}
+
+.mensaje-vuela-con-tu-mascota h2,
+/* titulo de los dos banner */
+.mensaje-seguridad-para-ti h2 {
+    font-size: 2rem;
+}
+
+.mensaje-vuela-con-tu-mascota p,
+/* parrrafo de los dos banner */
+.mensaje-seguridad-para-ti p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.container-seguridad-para-ti {
+    /* banner de seguridad para ti y tu mascota */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    height: 304px;
+    background-color: white;
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 80px;
+}
+
+.container-seguridad-para-ti img {
+    /* ubicando la imgen en el banner */
+    margin-top: 6px;
+    margin-right: -4px;
+}
+
+.mensaje-seguridad-para-ti {
+    /* contenedor del contenido del banner de seguridad para ti y tu mascota */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 304px;
+    width: 750px;
+    padding: 45px 40px;
+
+}
+
+.tipos-servicios {
+    /* contenedor del texto de los tipos de servicios */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tipos-servicios h2 {
+    /* titulo de tipo de servicios */
+    font-size: 34px;
+}
+
+.tipos-servicios p {
+    /* parrafo de tipos de servicios */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contenedor-tipos-de-servicios {
+    /* Contenedor de los tipos de servicios */
+    width: 100%;
+    padding: 50px 0;
+    border-radius: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+/* estilos de los banner de los tipos de servicios */
+.banner_en_cabina,
+.banner_en_bodega {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-cabina,
+.info-bodega {
+    /* estilos de los contenedores del contenido de los servicios */
+    width: 540px;
+    height: fit-content;
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    background-color: white;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    padding: 35px 35px;
+    gap: 10px;
+}
+
+.info-cabina h2,
+.info-bodega h2 {
+    /* estilo a los titulos de los servicios */
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+.info-cabina p {
+    /* tamaño al texto del servicio en cabina */
+    font-size: 18px;
+}
+
+.info-bodega p {
+    /* tamaño al texto del servicio en bodega con mas separacion porque hay menos texto */
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.container-documentos-necesarios {
+    /* contendor de los documentos necesarios (banner) */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 354px;
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    background-color: white;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.container-documentos-necesarios img {
+    /* ubicacion de la imagen dentro del banner */
+    margin-top: 7px;
+    margin-left: -4px;
+}
+
+.contenido-documentos-necesarios {
+    /* contenedor del contenido del banner de los documentos necesarios */
+    height: fit-content;
+    width: fit-content;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contenido-documentos-necesarios p {
+    /* estilos a los parrafos de los documentos necesarios */
+    text-align: justify;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.contenido-documentos-necesarios ul {
+    /* separacion de la lista con el parrafo superior */
+    margin-top: 10px;
+}
+
+.contenido-documentos-necesarios li {
+    /* separecion entre los elementos de la lista */
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.llenar-formulario {
+    /* contenedor del texto de llenar formulario */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.llenar-formulario a {
+    /* estilos al link de llenar formulario */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.llenar-formulario a:link {
+    /* estilos al link de llenar formulario */
+    color: #172D43;
+}
+
+.llenar-formulario a:hover {
+    color: black;
+    text-decoration: underline;
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+
 
 
 
@@ -201,6 +491,174 @@ footer {
     .boton_moneda {
         display: none !important;
     }
+
+    main {
+        /* contenedor principal */
+        margin-top: 200px;
+    }
+
+
+
+    .container-vuela-con-tu-mascota {
+        /* contenedor del banner vuela con tu mascota */
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        gap: 0px;
+        background-color: white;
+        border: 2px solid #d9d9d9;
+        border-radius: 0.7rem;
+        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 90px;
+    }
+
+    .container-vuela-con-tu-mascota img {
+        /* ubicando la imagen en el banner */
+        height: 200px;
+        margin-top: 5px;
+        margin-left: -4px;
+    }
+
+    .mensaje-vuela-con-tu-mascota {
+        /* contenedor dentro del banner para ubicar el contenido */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        gap: 10px;
+        width: 740px;
+        padding: 30px;
+    }
+
+    .mensaje-vuela-con-tu-mascota h2,
+    /* titulo de los dos banner */
+    .mensaje-seguridad-para-ti h2 {
+        font-size: 1.1rem;
+    }
+
+    .mensaje-vuela-con-tu-mascota p,
+    /* parrrafo de los dos banner */
+    .mensaje-seguridad-para-ti p {
+        font-size: 0.7rem;
+        text-align: justify;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .container-seguridad-para-ti {
+        /* banner de seguridad para ti y tu mascota */
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 0px;
+        height: 200px;
+        background-color: white;
+        border: 2px solid #d9d9d9;
+        border-radius: 0.7rem;
+        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 80px;
+    }
+
+    .container-seguridad-para-ti img {
+        /* ubicando la imgen en el banner */
+        height: 200px;
+        margin-top: 4px;
+        margin-right: -1px;
+    }
+
+    .mensaje-seguridad-para-ti {
+        /* contenedor del contenido del banner de seguridad para ti y tu mascota */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 304px;
+        width: 750px;
+        padding: 30px;
+
+    }
+
+    .tipos-servicios h2 {
+        /* titulo de tipo de servicios */
+        font-size: 1.3rem;
+    }
+
+    .tipos-servicios p {
+        /* parrafo de tipos de servicios */
+        font-size: 1.1rem;
+    }
+
+    .contenedor-tipos-de-servicios {
+
+        /* Contenedor de los tipos de servicios */
+        img {
+            width: 250px;
+        }
+    }
+
+
+    .info-cabina,
+    .info-bodega {
+        /* estilos de los contenedores del contenido de los servicios */
+        width: 250px;
+        height: fit-content;
+        padding: 30px;
+    }
+
+    .info-cabina h2,
+    .info-bodega h2 {
+        /* estilo a los titulos de los servicios */
+        margin-bottom: 0px;
+        font-size: 1.2rem;
+    }
+
+    .info-cabina p {
+        /* tamaño al texto del servicio en cabina */
+        font-size: 0.7rem;
+    }
+
+    .info-bodega p {
+        /* tamaño al texto del servicio en bodega con mas separacion porque hay menos texto */
+        margin-bottom: 0px;
+        font-size: 0.7rem;
+    }
+
+    .container-documentos-necesarios {
+        /* contendor de los documentos necesarios (banner) */
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container-documentos-necesarios img {
+        /* ubicacion de la imagen dentro del banner */
+        display: none;
+    }
+
+    .contenido-documentos-necesarios {
+        /* contenedor del contenido del banner de los documentos necesarios */
+        height: fit-content;
+        padding: 20px 30px;
+    }
+
+    .contenido-documentos-necesarios p {
+        /* estilos a los parrafos de los documentos necesarios */
+        font-size: 0.7rem;
+    }
+
+    .contenido-documentos-necesarios li {
+        /* separecion entre los elementos de la lista */
+        font-size: 0.7rem;
+    }
+
+    .llenar-formulario a {
+        /* estilos al link de llenar formulario */
+        font-size: 1rem;
+    }
+
+
 }
 
 
@@ -251,6 +709,226 @@ footer {
         /* separación del formulario al la parte superior del header */
         height: 70px;
     }
+
+
+
+    main {
+        /* contenedor principal */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5vw;
+        margin-bottom: 70px;
+    }
+
+
+    .mensaje-viaja-con-tu-mascota {
+        /* contenedor del mensaje de viaja con tu mascota */
+        padding: 20px 30px;
+        width: 70%;
+        left: 5%;
+    }
+
+    .mensaje-viaja-con-tu-mascota h2 {
+        /* titulo del mensaje */
+        font-size: 1rem;
+    }
+
+    .div {
+        /* linea que esta debajo del titulo */
+        width: 75%;
+    }
+
+    .mensaje-viaja-con-tu-mascota p {
+        /* parrafo de viaja con tu mascota */
+        font-size: 0.7rem;
+    }
+
+
+
+
+    main {
+        /* contenedor principal */
+        margin-top: 180px;
+    }
+
+
+
+    .container-vuela-con-tu-mascota {
+        /* contenedor del banner vuela con tu mascota */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        width: 100%;
+        height: fit-content;
+        gap: 0px;
+        background-color: white;
+        border: 2px solid #d9d9d9;
+        border-radius: 0.7rem;
+        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 50px;
+    }
+
+    .container-vuela-con-tu-mascota img {
+        /* ubicando la imagen en el banner */
+        height: 260px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 0 1.1rem 1.8rem 0;
+    }
+
+    .mensaje-vuela-con-tu-mascota {
+        /* contenedor dentro del banner para ubicar el contenido */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 30px 10px 30px;
+    }
+
+    .mensaje-vuela-con-tu-mascota h2,
+    /* titulo de los dos banner */
+    .mensaje-seguridad-para-ti h2 {
+        font-size: 1.1rem;
+    }
+
+    .mensaje-vuela-con-tu-mascota p,
+    /* parrrafo de los dos banner */
+    .mensaje-seguridad-para-ti p {
+        font-size: 0.7rem;
+        text-align: justify;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+
+    .container-seguridad-para-ti {
+        /* banner de seguridad para ti y tu mascota */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        width: 100%;
+        height: fit-content;
+        gap: 10px;
+        background-color: white;
+        border: 2px solid #d9d9d9;
+        border-radius: 0.7rem;
+        box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.25);
+        margin-bottom: 50px;
+    }
+
+    .container-seguridad-para-ti img {
+        /* ubicando la imgen en el banner */
+        height: 260px;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 1.1rem 0  0 1.8rem ;
+    }
+
+    .mensaje-seguridad-para-ti {
+        /* contenedor del contenido del banner de seguridad para ti y tu mascota */
+                /* contenedor dentro del banner para ubicar el contenido */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        gap: 10px;
+        width: 100%;
+        padding: 10px 30px 10px 30px;
+
+    }
+
+    .tipos-servicios h2 {
+        /* titulo de tipo de servicios */
+        font-size: 1.2rem;
+    }
+
+    .tipos-servicios p {
+        /* parrafo de tipos de servicios */
+        font-size: 0.8rem;
+    }
+
+    .contenedor-tipos-de-servicios {
+
+        /* Contenedor de los tipos de servicios */
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 300px;
+        }
+    }
+
+    .banner_en_cabina,
+    .banner_en_bodega{
+        gap: 20px;
+    }
+
+
+    .info-cabina,
+    .info-bodega {
+        /* estilos de los contenedores del contenido de los servicios */
+        width: 300px;
+        height: fit-content;
+        padding: 30px;
+    }
+
+    .info-cabina h2,
+    .info-bodega h2 {
+        /* estilo a los titulos de los servicios */
+        margin-bottom: 0px;
+        font-size: 1.2rem;
+    }
+
+    .info-cabina p {
+        /* tamaño al texto del servicio en cabina */
+        font-size: 0.7rem;
+    }
+
+    .info-bodega p {
+        /* tamaño al texto del servicio en bodega con mas separacion porque hay menos texto */
+        margin-bottom: 0px;
+        font-size: 0.7rem;
+    }
+
+    .container-documentos-necesarios {
+        /* contendor de los documentos necesarios (banner) */
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container-documentos-necesarios img {
+        /* ubicacion de la imagen dentro del banner */
+        display: none;
+    }
+
+    .contenido-documentos-necesarios {
+        /* contenedor del contenido del banner de los documentos necesarios */
+        height: fit-content;
+        padding: 20px 30px;
+    }
+
+    .contenido-documentos-necesarios p {
+        /* estilos a los parrafos de los documentos necesarios */
+        font-size: 0.7rem;
+    }
+
+    .contenido-documentos-necesarios li {
+        /* separecion entre los elementos de la lista */
+        font-size: 0.7rem;
+    }
+
+    .llenar-formulario a {
+        /* estilos al link de llenar formulario */
+        font-size: 1rem;
+    }
+
 
 
 
