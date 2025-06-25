@@ -1,0 +1,231 @@
+* {
+    /* estilos para resetear la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* para scroll suave entre secciones*/
+    font-family: Montserrat, sans-serif;
+    /* tipo de letra de la pagina */
+}
+
+body {
+    background-color: #fafafa;
+}
+
+
+header {
+    /* cabezera que contiene el logo y la flecha para devolverse */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.volver {
+    /* flecha para volver */
+    position: absolute;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-45%);
+    left: 200px;
+}
+
+.logo {
+    /* tamaño del logo */
+    width: 350px;
+}
+
+main {
+    /* conteneodr principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2 {
+    /* titulo del contenedor de datos personales y de la mascota */
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+form {
+    /* formulario */
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.container-perro {
+    /* contenedor de los inputs de perro y gato */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-gato {
+    /* contenedor del label y el input de radio de gato */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.container-tipo-mascota input {
+    /* tamaño de los inputs de radio */
+    scale: 1.8;
+}
+
+.container-tipo-mascota {
+    /* contendedor del tipo de mascotas */
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 200px;
+    width: 100%;
+}
+
+.container-nombre-mascota,
+/* contenedor del nombre de mascota, numero de vuelo y el de correo */
+.container-numero-vuelo,
+.container-correo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.container-nombre-mascota input,
+/* estilos de los inputs de mascota, numero de vuelo y el de correo */
+.container-numero-vuelo input,
+.container-correo input {
+    border-radius: 0.5rem;
+    border: 2px solid #999999;
+    font-size: 20px;
+    padding: 5px;
+    height: 50px;
+    width: 425px;
+}
+
+.ingresar-nombre {
+    /* tamaño de la letra del nombre de la persona */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.container-nombre-apellido {
+    /* contenedor de los imputs de nombre, apellido y el texto*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.nombre-apellido {
+    /* contenedor del input de nombre y apellido con el texto */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 20px;
+}
+
+.nombre,
+.apellido {
+    /* estilos de los contenedores de nombre y apellido */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nombre p,
+/* estilos de los textos de nombre y apellido */
+.apellido p {
+    color: #999999;
+}
+
+.nombre input,
+/* estilos de los inputs de nombre y apellido */
+.apellido input {
+    border-radius: 0.5rem;
+    border: 2px solid #999999;
+    font-size: 20px;
+    padding: 5px;
+    height: 50px;
+    width: 202px;
+}
+
+.parrafo-compartir-img {
+    /* texto de comparte una imagen de tu mascota */
+    width: 280px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.container-img-mascota {
+    /* contendor de subir imagen de la mascota y el texto*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-img {
+    /* contenedor de subir la imagen con el icono */
+    font-size: 14px;
+    gap: 7px;
+    display: flex;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 425px;
+    height: 130px;
+    border: 2px dashed #999999;
+}
+
+.container-img input {
+    /* el input tipo file se desactiva para que no aparezca en el formulario */
+    display: none;
+}
+
+.container-img label {
+    /* tipo de puntero para los label de subir imagen */
+    cursor: pointer;
+}
+
+.container-boton {
+    /* contenedor del boton de continuar */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+}
+
+form button {
+    /* estilos del boton de continuar */
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    gap: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+
+@media(max-width: 1350px){
+
+    
+}
