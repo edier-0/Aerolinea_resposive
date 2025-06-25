@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flynova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/registro_de_mascotas.css">
+</head>
+
+<body>
+    <header>
+
+        <a href="mascotas.html"><img class="volver" src="../Assets/registro_de_mascotas/volver.svg" alt=""></a>
+        <img class="logo" src="../Assets/compartidos/Logos/logo flynova negro.png" alt="">
+    </header>
+
+    <main>
+        <h2>Datos personales y de tu mascota</h2>
+        <form action="">
+            <div class="container-tipo-mascota">
+                <p>tipo de mascota</p>
+                <div class="container-perro">
+                    <input type="radio" id="perro" name="tipo-mascota">
+                    <label for="perro">Perro</label>
+                </div>
+                <div class="container-gato">
+                    <input type="radio" id="gato" name="tipo-mascota">
+                    <label for="gato">Gato</label>
+                </div>
+            </div>
+            <div class="container-nombre-mascota">
+                <p>¿como se llama tu mascota?</p>
+                <input type="text">
+            </div>
+            <div class="container-numero-vuelo">
+                <p>Numero de vuelo</p>
+                <input type="text">
+            </div>
+            <div class="container-nombre-apellido">
+                <p class="ingresar-nombre">Ingresa tu nombre</p>
+                <div class="nombre-apellido">
+                    <div class="nombre">
+                        <input type="text">
+                        <p>Primer Nombre</p>
+                    </div>
+                    <div class="apellido">
+                        <input type="text">
+                        <p>Apellido</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-correo">
+                <p>Correo electrónico</p>
+                <input type="text">
+            </div>
+            <div class="container-img-mascota">
+                <p class="parrafo-compartir-img">Puedes compartirnos una foto de tu mascota, nos dará gustó conocerla
+                </p>
+
+                <div class="container-img">
+                    <input type="file" id="subir-img">
+                    <img src="../Assets/registro_de_mascotas/subir imagen.svg" alt="">
+                    <label for="subir-img">Arrastra y suelta aquí o búsqueda de archivos</label>
+                    <label for="subir-img">Tamaño máximo 10 MB</label>
+                </div>
+            </div>
+            <div class="container-boton">
+                <button>
+                    <p>Continuar</p> <img src="../Assets/compartidos/iconos/flecha-right.svg" alt="">
+                </button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
