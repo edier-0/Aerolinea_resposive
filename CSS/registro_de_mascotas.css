@@ -30,7 +30,7 @@ header {
     height: 30px;
     top: 50%;
     transform: translateY(-45%);
-    left: 200px;
+    left: 12vw;
 }
 
 .logo {
@@ -171,6 +171,10 @@ form {
     text-align: justify;
 }
 
+.parrafo-compartir-img-movil{
+    display: none;
+}
+
 .container-img-mascota {
     /* contendor de subir imagen de la mascota y el texto*/
     display: flex;
@@ -225,7 +229,232 @@ form button {
 }
 
 
-@media(max-width: 1350px){
+@media(max-width: 1350px) {
 
-    
+    .volver {
+        /* flecha para volver */
+        height: 26px;
+        left: 12vw;
+    }
+
+    .logo {
+        /* tamaño del logo */
+        width: 300px;
+    }
+
+    main {
+        /* conteneodr principal */
+        padding: 0 10vw;
+    }
+
+    main h2 {
+        /* titulo del contenedor de datos personales y de la mascota */
+        font-size: 1.7rem;
+    }
+
+    form {
+        /* formulario */
+        width: 100%;
+    }
+
+
+    .container-tipo-mascota input {
+        /* tamaño de los inputs de radio */
+        scale: 1.5;
+    }
+
+    .container-tipo-mascota {
+        /* contendedor del tipo de mascotas */
+        font-size: 1.3rem;
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+    }
+
+    .container-nombre-mascota,
+    /* contenedor del nombre de mascota, numero de vuelo y el de correo */
+    .container-numero-vuelo,
+    .container-correo {
+        font-size: 1.2rem;
+    }
+
+    .container-nombre-mascota input,
+    /* estilos de los inputs de mascota, numero de vuelo y el de correo */
+    .container-numero-vuelo input,
+    .container-correo input {
+        font-size: 1rem;
+        height: 45px;
+        width: 300px;
+    }
+
+    .ingresar-nombre {
+        /* tamaño de la letra del nombre de la persona */
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+
+    .nombre-apellido {
+        /* contenedor del input de nombre y apellido con el texto */
+        font-size: 0.9rem;
+    }
+
+
+    .nombre input,
+    /* estilos de los inputs de nombre y apellido */
+    .apellido input {
+        font-size: 1rem;
+        height: 45px;
+        width: 141px;
+    }
+
+    .parrafo-compartir-img {
+        /* texto de comparte una imagen de tu mascota */
+        font-size: 1.2rem;
+    }
+
+    .container-img {
+        /* contenedor de subir la imagen con el icono */
+        font-size: 0.8rem;
+        width: 300px;
+    }
+
+}
+
+
+
+
+
+
+
+@media(max-width: 500px) {
+
+    header {
+        /* cabezera que contiene el logo y la flecha para devolverse */
+        margin-bottom: 40px;
+    }
+
+    .volver {
+        /* flecha para volver */
+        height: 22px;
+        left: 7vw;
+    }
+
+    .logo {
+        /* tamaño del logo */
+        width: 200px;
+    }
+
+    main {
+        /* conteneodr principal */
+        padding: 0 7vw;
+    }
+
+    main h2 {
+        /* titulo del contenedor de datos personales y de la mascota */
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+
+    form {
+        /* formulario */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .container-perro {
+        /* contenedor del label y el input de perro */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .container-gato {
+        /* contenedor del label y el input de gato */
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .container-tipo-mascota input {
+        /* tamaño de los inputs de radio */
+        scale: 1.2;
+    }
+
+    .container-tipo-mascota {
+        /* contendedor del tipo de mascotas */
+        font-size: 1rem;
+    }
+
+    .container-nombre-mascota,
+    /* contenedor del nombre de mascota, numero de vuelo y el de correo */
+    .container-numero-vuelo,
+    .container-correo {
+        font-size: 1rem;
+    }
+
+    .container-nombre-mascota input,
+    /* estilos de los inputs de mascota, numero de vuelo y el de correo */
+    .container-numero-vuelo input,
+    .container-correo input {
+        font-size: 1rem;
+        height: 40px;
+        width: 200px;
+    }
+
+    .ingresar-nombre {
+        /* tamaño de la letra del nombre de la persona */
+        font-size: 1rem;
+    }
+
+
+    .nombre-apellido {
+        /* contenedor del input de nombre y apellido con el texto */
+        font-size: 0.8rem;
+    }
+
+    .nombre input,
+    /* estilos de los inputs de nombre y apellido */
+    .apellido input {
+        font-size: 1rem;
+        height: 40px;
+        width: 110px;
+    }
+
+    .parrafo-compartir-img {
+        /* texto de comparte una imagen de tu mascota */
+        /* se oculta para pantallas mas pequeñas */
+        display: none;
+    }
+
+    /* Parrafo de compartir imagen de mascota para movil */
+    .parrafo-compartir-img-movil{
+        display: block;
+        width: fit-content;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    .container-img {
+        /* contenedor de subir la imagen con el icono */
+        font-size: 0.5rem;
+        width: 200px;
+        height: 130px;
+
+        img{
+            height: 26px;
+        }
+    }
+
+    form button {
+        /* estilos del boton de continuar */
+        font-size: 1rem;
+        margin-top: 0px;
+    }
+
 }
