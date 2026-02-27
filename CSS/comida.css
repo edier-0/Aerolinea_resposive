@@ -111,6 +111,139 @@ body {
 
 
 
+.fondo {
+    /* contenedor de la imagen de fondo */
+    position: relative;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.fondo img {
+    /* tamaño de la imagen de fondo */
+    width: 100%;
+}
+
+.banner-comida-fondo {
+    /* estilo del banner de comprar ahora */
+    position: absolute;
+    padding: 30px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 24px;
+    font-weight: 600;
+    bottom: 100px;
+    color: white;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0 0.7rem 0.7rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-comida-fondo p {
+    /* estilos del boton compra ahora */
+    padding: 10px 10px;
+    background-color: rgb(203, 0, 0);
+    font-size: 20px;
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin-top: -25px;
+    margin-left: 360px;
+}
+
+main {
+    /* contenedor principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.p-tu-viaje-empieza-con-buen-sabor {
+    /* parrafo de tu viaje empieza con un buen sabor */
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.comidas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    background-color: #eeeeee;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+.banner-comida {
+    height: 450px;
+    width: 353.5px;
+    border: 2px solid #9999;
+    border-radius: 0.7rem;
+    background-color: #eeeeee;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+.container-info-comida {
+    width: 100%;
+    height: 205px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nombre-de-plato {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.descripcion {
+    text-align: justify;
+    line-height: 1.3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #505050;
+}
+
+.container-precio-añadir {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.boton-añadir {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(203, 0, 0);
+    padding: 10px;
+    gap: 5px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.boton-añadir img {
+    filter: invert(100%);
+    height: 18px;
+}
+
+
+
+
+
 footer {
     /* Pie de pagina */
     margin-top: 50px;
@@ -204,6 +337,26 @@ footer {
     .boton_moneda {
         display: none !important;
     }
+
+
+    .banner-comida-fondo {
+        /* estilo del banner de comprar ahora */
+        font-size: 1.3rem;
+        bottom: 5vh;
+        width: 500px;
+    }
+
+    .banner-comida-fondo p {
+        /* estilos del boton compra ahora */
+        font-size: 0.9rem;
+        margin-left: 40vw;
+    }
+
+    .comidas {
+        flex-direction: column;
+    }
+
+
 }
 
 
@@ -248,12 +401,45 @@ footer {
 
     .separacion {
         /* separación del formulario al la parte superior del header */
-        height: 70px;
+        height: 12vh;
     }
 
 
 
 
+
+
+    .banner-comida-fondo {
+        /* estilo del banner de comprar ahora */
+        font-size: 0.7rem;
+        bottom: 2vh;
+        width: 300px;
+    }
+
+
+    .p-tu-viaje-empieza-con-buen-sabor {
+        /* parrafo de tu viaje empieza con un buen sabor */
+        font-size: 1.3rem;
+    }
+
+    .banner-comida-fondo p {
+        /* estilos del boton compra ahora */
+        position: absolute;
+        margin-top: 5.5vh;
+        font-size: 0.5rem;
+        margin-left: 23vh;
+    }
+
+
+    .fondo {
+    /* contenedor de la imagen de fondo */
+    margin-bottom: 40px;
+}
+
+        .comidas {
+        flex-direction: column;
+        padding: 20px;
+    }
 
 
 

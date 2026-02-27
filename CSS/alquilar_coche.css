@@ -108,6 +108,292 @@ body {
 
 
 
+.fondo {
+    /* contenedor del fondo */
+    margin-bottom: 50px;
+}
+
+.fondo img {
+    /* tamño de la imgaen de fondo */
+    width: 100%;
+}
+
+
+form {
+    /* formulario de lugar fecha y hora de recogida y de vuelta del vehiculo */
+    width: 85%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lugar-recogida {
+    /* contenedor del input de lugar de recogida para ubicar la imagen de lugar */
+    position: relative;
+    width: fit-content;
+}
+
+.lugar-recogida img {
+    /* tamaño y posicion del icono de lugar en el input */
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+#flecha {
+    /* tamaño de las flechas del formulario para la hora (se pone id porque con la clase no agarra los estilos) */
+    width: 30px;
+}
+
+
+.lugar-recogida input {
+    /* Estilos del input de lugar de recogida */
+    padding: 5px 5px 5px 40px;
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    border: 2px solid #757575;
+}
+
+.fecha-recogida,
+/* estilos de los inputs de fecha de recogida y vuelta del vehiculo */
+.fecha-vuelta {
+    padding: 5px 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    border: 2px solid #757575;
+}
+
+.hora-recogida,
+/* estilos de los inputs de hora de recogida y de vuelta del vehiculo */
+.hora-vuelta {
+    padding: 5px 10px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    border: 2px solid #757575;
+}
+
+form button {
+    /* estilos del boton de buscar */
+    height: 40px;
+    width: fit-content;
+    padding: 10px 10px;
+    border: 2px solid #757575;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #172D43;
+}
+
+main {
+    /* centrando todos los elementos del main */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.banner-vehiculos {
+    /* banner de los vehiculos */
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+.img {
+    /* posicion de la imagen en el banner */
+    position: absolute;
+    left: 0;
+}
+
+.rectangulo {
+    /* posicion de rectangulo en el banner */
+    position: absolute;
+    right: 0;
+}
+
+.texto-banner {
+    /* texto del banner de vehiculos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 0;
+    right: 0;
+    padding: 60px 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.banner-carro {
+    /* banner de cada carro */
+    width: 1200px;
+    height: 380px;
+    background-color: white;
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+}
+
+.container-carro-modelo {
+    /* contenedor de la imagen del carro y el nombre */
+    width: fit-content;
+    margin-left: 50px;
+}
+
+.container-carro-modelo h2 {
+    /* nombre del carro */
+    font-size: 34px;
+    color: #13004f;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.container-info-carro {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#asientos {
+    /* icono de user cuadrado para los asientos */
+    width: 40px;
+    height: 40px;
+}
+
+#combustible {
+    /* icono de gsolinera para el tipo de combustible */
+    width: 35px;
+    height: 33px;
+}
+
+#transmision {
+    /* icono de transmision para el tipo de trasmision */
+    width: 35px;
+    height: 28px;
+}
+
+#puertas {
+    width: 35px;
+    height: 31px;
+}
+
+#maletas {
+    width: 40px;
+    height: 40px;
+}
+
+#aire-acondicionado {
+    width: 35px;
+    height: 35px;
+}
+
+.asientos {
+    /* contendeor del icono y el texto de los asientos */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.transmision,
+.combustible,
+.puertas,
+.maletas {
+    /* contenedor de los iconos y los textos de la informacion */
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.container-izquierdo {
+    /* contenedor de los elementos del lado izquierdo y derecho del banner */
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 35px;
+}
+
+.transmision p,
+/* texto de los elementos de asientos, combustible y transmision */
+.combustible p,
+.asientos p,
+.puertas p,
+.maletas p,
+.aire-acondicionado p {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.precio-dias {
+    /* texto de los dias con el vehiculo */
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.container-derecho {
+    /* Contenedor de los elementos del lado derecho del banner */
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 35px;
+}
+
+.aire-acondicionado {
+    /* contenedor del icono de aire acondicionado y el texto */
+    margin-top: -5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.precio {
+    /* texto del precio */
+    margin-left: 10px;
+    font-size: 26px;
+}
+
+.container-precio-flecha {
+    /* contenedor del precio y la flecha */
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.container-precio-flecha img {
+    /* Tamaño del icono de la flecha */
+    height: 34px;
+}
 
 
 
@@ -209,6 +495,262 @@ footer {
     .boton_moneda {
         display: none !important;
     }
+
+
+
+    .fondo {
+        /* contenedor del fondo */
+        margin-bottom: 50px;
+    }
+
+    .fondo img {
+        /* tamño de la imgaen de fondo */
+        width: 100%;
+    }
+
+
+    form {
+        /* formulario de lugar fecha y hora de recogida y de vuelta del vehiculo */
+        width: 85%;
+        gap: 20px;
+        height: fit-content;
+        padding: 20px;
+        flex-wrap: wrap;
+        top: 30%;
+    }
+
+    .lugar-recogida {
+        /* contenedor del input de lugar de recogida para ubicar la imagen de lugar */
+        position: relative;
+        width: fit-content;
+    }
+
+    .lugar-recogida img {
+        /* tamaño y posicion del icono de lugar en el input */
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 8px;
+        left: 10px;
+    }
+
+    #flecha {
+        /* tamaño de las flechas del formulario para la hora (se pone id porque con la clase no agarra los estilos) */
+        width: 30px;
+    }
+
+
+    .lugar-recogida input {
+        /* Estilos del input de lugar de recogida */
+        padding: 5px 5px 5px 40px;
+        height: 40px;
+        width: 300px;
+        font-size: 16px;
+        border-radius: 0.5rem;
+        border: 2px solid #757575;
+    }
+
+    .fecha-recogida,
+    /* estilos de los inputs de fecha de recogida y vuelta del vehiculo */
+    .fecha-vuelta {
+        padding: 5px 10px;
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 0.5rem;
+        border: 2px solid #757575;
+    }
+
+    .hora-recogida,
+    /* estilos de los inputs de hora de recogida y de vuelta del vehiculo */
+    .hora-vuelta {
+        padding: 5px 10px;
+        height: 40px;
+        width: 100px;
+        font-size: 16px;
+        border-radius: 0.5rem;
+        border: 2px solid #757575;
+    }
+
+    form button {
+        /* estilos del boton de buscar */
+        height: 40px;
+        width: fit-content;
+        padding: 10px 10px;
+        border: 2px solid #757575;
+        border-radius: 0.5rem;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #172D43;
+    }
+
+    main {
+        /* centrando todos los elementos del main */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 80px;
+    }
+
+    .banner-vehiculos {
+        /* banner de los vehiculos */
+        display: none;
+    }
+
+
+    .banner-carro {
+        /* banner de cada carro */
+        width: 85%;
+        height: fit-content;
+        padding: 20px 10px;
+    }
+
+    .container-carro-modelo {
+        /* contenedor de la imagen del carro y el nombre */
+        width: fit-content;
+        margin-left: 30px;
+
+        img {
+            width: 250px;
+        }
+    }
+
+    .container-carro-modelo h2 {
+        /* nombre del carro */
+        font-size: 1.43rem;
+        color: #13004f;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container-info-carro {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #asientos {
+        /* icono de user cuadrado para los asientos */
+        width: 28px;
+        height: 28px;
+    }
+
+    #combustible {
+        /* icono de gsolinera para el tipo de combustible */
+        width: 25px;
+        height: 25px;
+    }
+
+    #transmision {
+        /* icono de transmision para el tipo de trasmision */
+        width: 27px;
+        height: 20px;
+    }
+
+    #puertas {
+        width: 25px;
+        height: 21px;
+    }
+
+    #maletas {
+        width: 28px;
+        height: 28px;
+    }
+
+    #aire-acondicionado {
+        width: 20px;
+        height: 20px;
+    }
+
+    .asientos {
+        /* contendeor del icono y el texto de los asientos */
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .transmision,
+    .combustible,
+    .puertas,
+    .maletas {
+        /* contenedor de los iconos y los textos de la informacion */
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .aire-acondicionado {
+        /* contenedor del icono de aire acondicionado y el texto */
+        margin-top: -5px;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .transmision p,
+    /* texto de los elementos de asientos, combustible y transmision */
+    .combustible p,
+    .asientos p,
+    .puertas p,
+    .maletas p,
+    .aire-acondicionado p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .precio-dias {
+        /* texto de los dias con el vehiculo */
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 0.85rem;
+        font-weight: 500;
+    }
+
+    .container-izquierdo {
+        /* contenedor de los elementos del lado izquierdo y derecho del banner */
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 20px;
+    }
+
+
+    .container-derecho {
+        /* Contenedor de los elementos del lado derecho del banner */
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+
+
+    .precio {
+        /* texto del precio */
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+
+    .container-precio-flecha {
+        /* contenedor del precio y la flecha */
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-precio-flecha img {
+        /* Tamaño del icono de la flecha */
+        height: 34px;
+    }
+
 }
 
 
@@ -259,6 +801,146 @@ footer {
     }
 
 
+
+
+    .fondo {
+        /* contenedor del fondo */
+        margin-bottom: 350px;
+    }
+
+
+    form {
+        /* formulario de lugar fecha y hora de recogida y de vuelta del vehiculo */
+        width: 85%;
+        gap: 20px;
+        height: fit-content;
+        padding: 20px;
+        flex-wrap: wrap;
+        top: 20%;
+    }
+
+
+
+    #flecha {
+        /* tamaño de las flechas del formulario para la hora (se pone id porque con la clase no agarra los estilos) */
+        display: none;
+    }
+
+
+    .lugar-recogida input {
+        /* Estilos del input de lugar de recogida */
+        padding: 5px 5px 5px 40px;
+        height: 40px;
+        width: 300px;
+        font-size: 16px;
+        border-radius: 0.5rem;
+        border: 2px solid #757575;
+    }
+
+    .fecha-recogida,
+    /* estilos de los inputs de fecha de recogida y vuelta del vehiculo */
+    .fecha-vuelta {
+        width: 300px;
+    }
+
+    .hora-recogida,
+    /* estilos de los inputs de hora de recogida y de vuelta del vehiculo */
+    .hora-vuelta {
+        width: 300px;
+    }
+
+    form button {
+        /* estilos del boton de buscar */
+        width: 95%;
+    }
+
+    main {
+        /* centrando todos los elementos del main */
+        flex-direction: column;
+    }
+
+    .banner-vehiculos {
+        /* banner de los vehiculos */
+        display: none;
+    }
+
+
+    .banner-carro {
+        /* banner de cada carro */
+        flex-direction: column;
+        width: 85%;
+        height: fit-content;
+        padding: 10px;
+    }
+
+
+    .asientos {
+        /* contendeor del icono y el texto de los asientos */
+        display: flex;
+        align-items: center;
+        padding-right: 25px;
+        gap: 10px;
+    }
+
+
+    .transmision,
+    .combustible,
+    .puertas,
+    .maletas {
+        /* contenedor de los iconos y los textos de la informacion */
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .aire-acondicionado {
+        /* contenedor del icono de aire acondicionado y el texto */
+        padding-right: 5px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+    .container-izquierdo {
+        /* contenedor de los elementos del lado izquierdo y derecho del banner */
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        gap: 20px;
+    }
+
+
+    .container-derecho {
+        /* Contenedor de los elementos del lado derecho del banner */
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+
+
+    .precio {
+        /* texto del precio */
+        margin-left: 0px;
+        font-size: 1rem;
+    }
+
+    .container-precio-flecha {
+        /* contenedor del precio y la flecha */
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .container-precio-flecha img {
+        /* Tamaño del icono de la flecha */
+        height: 34px;
+    }
 
 
 

@@ -108,6 +108,192 @@ body {
 
 
 
+.fondo {
+    position: relative;
+    /*para posicionar el banner */
+    margin-bottom: 200PX;
+}
+
+.banner-oferta {
+    /* Banner de no te pierdas ofertas */
+    max-width: 80%;
+    /* Ancho maximo */
+    position: absolute;
+    top: 75%;
+    /* está al 75% de la parte superior */
+    left: 50%;
+    /* esta al 50% del borde izquierdo del banner al centro del padre */
+    transform: translatex(-50%);
+    /* se mueve el banner al 50% de su propio tamaño (se identifica el centro de su tamaño) */
+    width: 100%;
+    /* Asegura que ocupe el ancho disponible */
+    height: auto;
+}
+
+.img-oferta {
+    position: absolute;
+    /* posicion absolute busca el ancestro posicionado más cercano
+    (cualquier elemento padre que tenga position diferente a static)*/
+    left: 0;
+}
+
+.rectangulo-oferta {
+    position: absolute;
+    right: 0;
+}
+
+.info-banner {
+    /* contenedor de la informacion del banner */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    color: white;
+    width: fit-content;
+    top: 6vh;
+    right: 4%;
+}
+
+.terminos-condiciones {
+    /* el checkbox y el label se alinean */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.terminos-condiciones input {
+    /* Mas tamaño al input */
+    transform: scale(1.2);
+}
+
+.terminos-condiciones label {
+    /* tamaño de la letra del label */
+    font-size: 12.7px;
+}
+
+.info-banner button {
+    /* estilos del boton de registrarse */
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #172D43;
+    font-size: 16px;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container-explora {
+    /* texto de explora mas lugares */
+    padding-left: 145px;
+    margin-bottom: 70px;
+    font-size: 24px;
+    color: #13004F;
+}
+
+section {
+    /* centro los elementos de la seccion */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.todas-las-ciudades {
+    /* el div que contiene todas las ciudades en los otros dos divs */
+    display: flex;
+    gap: 50px;
+}
+
+.ciudades {
+    /* dos divs que contienen todas las ciudades*/
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.ciudad {
+    /* estilos de cada banner de las ciudades */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 570px;
+    height: 200px;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.66rem;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.ciudad img {
+    /* imagen de cada banner de la ciudad */
+    margin-top: 6px;
+    margin-left: -4px;
+}
+
+.info-ciudad {
+    /* div que contiene todos los elementos de informacion de las ciudades */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 20px;
+    left: 275px;
+}
+
+/* contendedor del lugar con el icono */
+.lugar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lugar h3 {
+    /* titula de cada banner */
+    font-size: 20px;
+}
+
+.texto-colombia {
+    /* texto del pais de origen */
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.acumula-puntos {
+    /* texto de acumula puntos */
+    font-size: 13px;
+    width: 140px;
+    font-weight: 600;
+    padding: 7px;
+    color: white;
+    background-color: #800F71;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.precio-persona {
+    /* texto de precio por persona */
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.precio {
+    /* precio de cada ciudad */
+    font-size: 20px;
+}
+
+.container-vuelos-internacionales {
+    /* contenedor del texto de vuelos inernacionales */
+    padding-left: 145px;
+    margin-bottom: 70px;
+    font-size: 24px;
+    color: #13004F;
+}
+
+
+
+
+
+
 
 
 
@@ -198,13 +384,86 @@ footer {
 
 
 
+
+
 @media(max-width: 1350px) {
 
     /* HEADER */
     .boton_moneda {
         display: none !important;
     }
+
+
+    /* BANNER DE REGISTRARSE */
+    .img-oferta {
+        display: none;
+    }
+
+    .rectangulo-oferta {
+        display: none;
+
+    }
+
+    .info-banner {
+        /* contenedor de la informacion del banner */
+        background: linear-gradient(to right, #13004F, #172D43);
+        padding: 30px;
+        border-radius: 0.8rem;
+        top: 0;
+        right: 0
+    }
+
+    .info-banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .info-banner p {
+        font-size: 0.8rem;
+    }
+
+
+
+    .terminos-condiciones input {
+        /* Mas tamaño al input */
+        transform: scale(1);
+    }
+
+    .terminos-condiciones label {
+        /* tamaño de la letra del label */
+        font-size: 0.8rem;
+    }
+
+
+
+
+    /* SECCION DE TODAS LAS CIUDADES */
+
+
+    .container-explora {
+        /* texto de explora mas lugares */
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .todas-las-ciudades {
+        /* el div que contiene todas las ciudades en los otros dos divs */
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .container-vuelos-internacionales {
+        /* contenedor del texto de vuelos inernacionales */
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        font-size: 1.1rem;
+        color: #13004F;
+    }
 }
+
+
 
 
 
@@ -250,6 +509,159 @@ footer {
         /* separación del formulario al la parte superior del header */
         height: 70px;
     }
+
+
+
+.fondo {
+    position: relative;
+    /*para posicionar el banner */
+    margin-bottom: 230PX;
+}
+
+.banner-oferta {
+    /* Banner de no te pierdas ofertas */
+    max-width: 80%;
+    /* Ancho maximo */
+    position: absolute;
+    top: 50%;
+    /* está al 50% de la parte superior */
+}
+
+
+.info-banner {
+    /* contenedor de la informacion del banner */
+    top: 6vh;
+
+    h1{
+        font-size: 1.07rem;
+    }
+}
+
+.terminos-condiciones input {
+    /* Mas tamaño al input */
+    transform: scale(1.2);
+}
+
+.terminos-condiciones label {
+    /* tamaño de la letra del label */
+    font-size: 0.7rem;
+}
+
+.info-banner button {
+    /* estilos del boton de registrarse */
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #172D43;
+    font-size: 16px;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.container-explora {
+    /* texto de explora mas lugares */
+    padding-left: 0;
+    margin-bottom: 70px;
+    font-size: 1.1rem;
+    color: #13004F;
+}
+
+section {
+    /* centro los elementos de la seccion */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.todas-las-ciudades {
+    /* el div que contiene todas las ciudades en los otros dos divs */
+    display: flex;
+    gap: 50px;
+}
+
+.ciudades {
+    /* dos divs que contienen todas las ciudades*/
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.ciudad {
+    /* estilos de cada banner de las ciudades */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 255px;
+    height: fit-content;
+    padding-bottom: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.66rem;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.ciudad img {
+    /* imagen de cada banner de la ciudad */
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 0 0.7rem 1.7rem 0rem;
+}
+
+.info-ciudad {
+    /* div que contiene todos los elementos de informacion de las ciudades */
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: -20px;
+}
+
+/* contendedor del lugar con el icono */
+.lugar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lugar h3 {
+    /* titula de cada banner */
+    font-size: 1rem;
+}
+
+.lugar img {
+    /* icono de lugar de cada banner */
+    width: 20px;
+}
+
+.texto-colombia {
+    /* texto del pais de origen */
+    font-size: 0.9rem;
+}
+
+.acumula-puntos {
+    /* texto de acumula puntos */
+    font-size: 0.7rem;
+    width: fit-content;
+    padding: 7px 10px;
+}
+
+.precio-persona {
+    /* texto de precio por persona */
+    font-size: 0.9rem;
+}
+
+.precio {
+    /* precio de cada ciudad */
+    font-size: 1.2rem;
+}
+
+.container-vuelos-internacionales {
+    /* contenedor del texto de vuelos inernacionales */
+    
+    padding-left: 0;
+    font-size: 0.7rem;
+}
 
 
 

@@ -109,6 +109,281 @@ body {
 
 
 
+.fondo img {
+    /* tamaño a la imagen de fondo para que ocupe todo el espacio */
+    width: 100%;
+}
+
+.fondo {
+    /* Contenedor de la imagen de fondo */
+    margin-bottom: 70px;
+    position: relative;
+    /* para ubicar el buscador */
+}
+
+.container-busqueda {
+    /* contenedorde los inputs de busqueda */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    top: 70%;
+    left: 50%;
+    transform: translatex(-50%);
+    padding: 30px;
+    border-radius: 0.7rem;
+}
+
+.estadia {
+    /* contenedor del input de la ciudad donde va */
+    position: relative;
+}
+
+.estadia img {
+    /* icono dentro del contenedor de la ciudad */
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.estadia input {
+    /* estilos del input */
+    width: 270px;
+    height: 40px;
+    border-radius: 0.5rem;
+    padding: 5px 5px 5px 38px;
+    font-size: 16px;
+    border: 2px solid #757575;
+}
+
+.fecha-ingreso input {
+    /* estilos a el input de fecha de ingreso */
+    width: 200px;
+    height: 40px;
+    border-radius: 0.4rem;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 2px solid #757575;
+}
+
+.fecha-salida input {
+    /* estilos a el input de fecha de salida */
+    width: 200px;
+    height: 40px;
+    border-radius: 0.4rem;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: 2px solid #757575;
+}
+
+.cantidad-personas {
+    /* contenedor del input del numero de personas */
+    position: relative;
+}
+
+.cantidad-personas img {
+    /* icono dentro del input de cantidad de personas */
+    height: 24px;
+    width: 24px;
+    top: 7px;
+    left: 10px;
+    position: absolute;
+}
+
+.cantidad-personas input {
+    /* estilos al input de cantidad de personas */
+    width: 85px;
+    height: 40px;
+    border-radius: 0.4rem;
+    padding: 5px 5px 5px 40px;
+    font-size: 18px;
+    border: 2px solid #757575;
+
+}
+
+.habitaciones input {
+    /* estilos al input de cantidad de habitaciones */
+    width: 85px;
+    height: 40px;
+    border-radius: 0.4rem;
+    padding: 5px 5px 5px 40px;
+    font-size: 18px;
+    border: 2px solid #757575;
+}
+
+.habitaciones {
+    /* contenedor del input de cantidad de habitaciones */
+    position: relative;
+}
+
+.habitaciones img {
+    /* icono de la cama dentro del inpput de cantidad de habitaciones */
+    height: 24px;
+    width: 24px;
+    top: 7px;
+    left: 10px;
+    position: absolute;
+}
+
+.container-busqueda button {
+    /* estilos del boton de buscar */
+    width: auto;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    background-color: #172D43;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.contenedor-texto {
+    /* contenedor del texto de los hoteles */
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #13004F;
+    margin-bottom: 70px;
+}
+
+main {
+    /* contenedor principal */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.todos-los-hoteles {
+    /* contenedor de todos los divs de los hoteles */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hoteles {
+    /* contenedores de los divs de los hoteles*/
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.hotel {
+    /* banner de cada hotel */
+    background-color: white;
+    width: 373px;
+    height: 620px;
+    border: 2px solid #d9d9d9;
+    border-radius: 0.7rem;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+}
+
+.contenido-hoteles {
+    /* contenido de la informacion de cada hotel */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 30px;
+    padding-top: 25px;
+    position: relative;
+}
+
+.alojamiento,
+.metros-del-centro,
+.ciudad-estadia,
+.personas-noches,
+.precio-antes {
+    /* texto alojamiento */
+    font-weight: 600;
+    font-size: 13px;
+    color: #757575;
+}
+
+.contenido-hoteles h3 {
+    /* nombre del hotel */
+    font-size: 18px;
+    color: #13004F;
+}
+
+.calificacion {
+    /* estilos a la calificación */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.puntaje {
+    /* estilos del puntaje (numero) */
+    background-color: rgba(3, 166, 145, 1);
+    color: rgba(230, 243, 224, 1);
+    padding: 3px 6px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.3rem;
+}
+
+.servicios-hotel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.precio-antes {
+    text-decoration: line-through;
+}
+
+.precio {
+    font-size: 18px;
+    color: #13004F;
+}
+
+.linea {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.descuento {
+    height: 37px;
+    width: 55px;
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+}
+
+.triangulo {
+    position: absolute;
+    right: 0;
+}
+
+.rectangulo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.descuento p {
+    position: absolute;
+    color: rgba(230, 243, 224, 1);
+    font-weight: 500;
+    font-size: 14px;
+    bottom: 5px;
+    right: 7px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
 
 
 
@@ -206,6 +481,51 @@ footer {
     .boton_moneda {
         display: none !important;
     }
+
+
+    .contenedor-texto {
+        /* contenedor del texto de los hoteles */
+        font-size: 0.7rem;
+    }
+
+
+
+    /* FORMULARIO */
+
+
+    .fondo {
+        /* Contenedor de la imagen de fondo */
+        margin-bottom: 200px;
+        /* para ubicar el buscador */
+    }
+
+    .container-busqueda {
+        /* contenedorde los inputs de busqueda */
+        border: 2px solid #d1d1d1;
+        top: 50%;
+        border-radius: 0.7rem;
+
+        flex-wrap: wrap;
+    }
+
+    .estadia input {
+        /* estilos del input */
+        width: 310px;
+    }
+
+    .fecha-ingreso input {
+        /* estilos a el input de fecha de ingreso */
+        width: 310px;
+    }
+
+
+
+    /* SECCION DE LOS HOTELES */
+
+    .hoteles {
+        /* contenedores de los divs de los hoteles*/
+        flex-direction: column;
+    }
 }
 
 
@@ -255,6 +575,18 @@ footer {
 
 
 
+
+
+        .fondo {
+        /* Contenedor de la imagen de fondo */
+        margin-bottom: 270px;
+        /* para ubicar el buscador */
+    }
+
+        .contenedor-texto {
+        /* contenedor del texto de los hoteles */
+        display: none;
+    }
 
 
 

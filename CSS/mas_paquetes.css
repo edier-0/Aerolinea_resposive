@@ -109,6 +109,212 @@ body {
 
 
 
+.fondo {
+    /* contenedor del fondo */
+    margin-bottom: 70px;
+}
+
+.fondo img {
+    /* tamño de la imgaen de fondo */
+    width: 100%;
+}
+
+.container-banner-paquetes {
+    /* contenedor padre del banner de paquetes */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 290px;
+}
+
+.banner-paquetes {
+    /* contenedor de los elementos del banner */
+    width: 77%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.imagen {
+    /* posicion de la imagen */
+    position: absolute;
+    left: 0;
+}
+
+.rectangulo {
+    /* posicion del rectangulo con degradado */
+    position: absolute;
+    right: 0;
+}
+
+.texto-banner {
+    /* contenedor del texto del banner */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    gap: 5px;
+    top: 60px;
+    right: 55px;
+}
+
+.container-texto-paquetes {
+    /* contenedor del texto de los paquetes */
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-left: 140px;
+    margin-bottom: 70px;
+}
+
+.container-texto-paquetes h1 {
+    /* estilos al titulo */
+    font-size: 36px;
+    color: #13004f;
+}
+
+.container-texto-paquetes p {
+    /* estilos al parrafo */
+    font-weight: 600;
+    font-size: 20px;
+    color: #13004f;
+}
+
+main {
+    /* contenido principal */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.container-paquetes {
+    /* contenedor de los paquetes */
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.paquete {
+    /* estilo de los banner de cada paquete */
+    width: 374px;
+    height: 650px;
+    border-radius: 0.7rem;
+    border: 2px solid #d9d9d9;
+    background-color: white;
+    box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.contenido {
+    /* contenido de los banner de los paquetes */
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.dias-noche {
+    /* contenedor de dias y noches de los paquetes */
+    background-color: rgba(63, 149, 250, 1);
+    width: fit-content;
+    border-radius: 0.3rem;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: 230px;
+}
+
+.texto-paquete,
+.ciudad-partida,
+.hotel-vuelo,
+.precio-persona {
+    /* estilos del texto paquetes, ciudad de partida, hotel + vuelo y precio por persona */
+    font-size: 15px;
+    color: #757575;
+    font-weight: 500;
+}
+
+.contenido h3 {
+    /* color y tamaño al nombre del paquete */
+    font-size: 20px;
+    color: #13004F;
+}
+
+.calificacion {
+    /* contenedor de la calificacion */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.puntaje {
+    /* estilos del puntaje en numeros */
+    background-color: rgba(3, 166, 145, 1);
+    color: rgba(230, 243, 224, 1);
+    padding: 3px 6px;
+    border-radius: 0.3rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hotel-vuelo {
+    /* se separa el texto hotel + vuelos de precio por persona para que quepa entre los dos */
+    margin-bottom: 50px;
+}
+
+.ahorro {
+    /* estilo del contenedor de ahorro */
+    background-color: rgba(230, 251, 244, 1);
+    width: fit-content;
+    border: 2px solid rgba(3, 166, 145, 1);
+    border-radius: 0.3rem;
+    padding: 5px 10px;
+    font-weight: 600;
+    position: absolute;
+    left: 45px;
+    bottom: 150px;
+    z-index: 1;
+}
+
+.precio-antes {
+    /* estilos del precio antes */
+    font-size: 15px;
+    color: #757575;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.precio {
+    /* estilos del precio ahora */
+    color: #13004F;
+    font-size: 24px;
+}
+
+.linea {
+    /* se posiciona la linea en absoluto por el padding del contenedor contenido */
+    position: absolute;
+    right: 0;
+    bottom: 165px;
+}
+
+
+
+
 
 
 
@@ -206,6 +412,70 @@ footer {
     .boton_moneda {
         display: none !important;
     }
+
+
+    .container-banner-paquetes {
+        /* contenedor padre del banner de paquetes */
+        margin-bottom: 180px;
+    }
+
+    .banner-paquetes {
+        /* contenedor de los elementos del banner */
+        transform: translateX(-50%);
+    }
+
+    .imagen {
+        /* posicion de la imagen */
+        display: none;
+    }
+
+    .rectangulo {
+        /* posicion del rectangulo con degradado */
+        display: none;
+    }
+
+    .texto-banner {
+        /* contenedor del texto del banner */
+        background: linear-gradient(to right, #7B107A, #6617A3);
+        border-radius: 0.8rem;
+        padding: 30px;
+        width: fit-content;
+        font-size: 1.85rem;
+        top: 0;
+        right: 0;
+    }
+
+    .container-texto-paquetes {
+        /* contenedor del texto de los paquetes */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 25px;
+        padding-left: 0;
+        margin-bottom: 60px;
+    }
+
+    .container-texto-paquetes h1 {
+        /* estilos al titulo */
+        font-size: 1.5rem;
+    }
+
+    .container-texto-paquetes p {
+        /* estilos al parrafo */
+        font-size: 1.2rem;
+    }
+
+
+    /* SECCION DE LOS PAQUETES */
+    .container-paquetes {
+        /* contenedor de los paquetes */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
 }
 
 
@@ -255,6 +525,51 @@ footer {
 
 
 
+
+    .fondo {
+        /* contenedor del fondo */
+        margin-bottom: 10px;
+    }
+
+
+    .container-banner-paquetes {
+        /* contenedor padre del banner de paquetes */
+        margin-bottom: 140px;
+    }
+
+    .banner-paquetes {
+        /* contenedor de los elementos del banner */
+        width: 90%; 
+        transform: translateX(-50%);
+    }
+
+    .texto-banner {
+        /* contenedor del texto del banner */
+        font-size: 1.14rem;
+
+    }
+
+    .container-texto-paquetes {
+        /* contenedor del texto de los paquetes */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+        padding-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .container-texto-paquetes h1 {
+        /* estilos al titulo */
+        font-size: 1rem;
+    }
+
+    .container-texto-paquetes p {
+        /* estilos al parrafo */
+        font-size: 0.9rem;
+    }
 
 
 

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/mas_paquetes.css">
+    <link rel="stylesheet" href="../CSS/alquilar_coche.css">
 </head>
 
 <body>
@@ -33,6 +33,249 @@
     </div>
 
 
+
+
+    <div class="fondo">
+        <img class="lugar" src="../Assets/alquilar_coche/fondo-vehiculos.svg" alt="">
+        <form action="">
+            <div class="lugar-recogida">
+                <img src="../Assets/compartidos/iconos/lugar.svg" alt="">
+                <input list="ciudades" placeholder="Lugar de recogida">
+                <datalist id="ciudades">
+                    <option value="Medellín"></option>
+                    <option value="Pereira"></option>
+                    <option value="Bogotá"></option>
+                </datalist>
+            </div>
+
+            <input class="fecha-recogida" type="date">
+            <img class="flecha-hora-recogida" id="flecha" src="../Assets/compartidos/iconos/flecha-right.svg" alt="">
+            <input class="hora-recogida" type="time">
+
+            <input class="fecha-vuelta" type="date">
+            <img class="flecha-hora-vuelta" id="flecha" src="../Assets/compartidos/iconos/flecha-right.svg" alt="">
+            <input class="hora-vuelta" type="time">
+            <button>
+                <p>Buscar</p>
+            </button>
+        </form>
+    </div>
+    <main>
+        <div class="banner-vehiculos">
+            <img class="img" src="../Assets/alquilar_coche/img-banner-vehiculos.svg" alt="">
+            <img class="rectangulo" src="../Assets/alquilar_coche/Rectangulo-banner-vehiculos.svg" alt="">
+            <div class="texto-banner">
+                <h2>Ten un carro esperandote en</h2>
+                <h2>tu proximo destino</h2>
+            </div>
+        </div>
+
+        <div class="banner-carro">
+            <div class="container-carro-modelo">
+                <h2>Kia Sportage</h2>
+                <img src="../Assets/alquilar_coche/KIA Sportage_blanca 1.svg" alt="">
+            </div>
+            <div class="container-info-carro">
+                <div class="container-izquierdo">
+                    <div class="asientos">
+                        <img id="asientos" src="../Assets/alquilar_coche/iconos/user cuadrado.svg" alt="">
+                        <p>5 Asientos</p>
+                    </div>
+                    <div class="combustible">
+                        <img id="combustible" src="../Assets/alquilar_coche/iconos/gasolinera.svg" alt="">
+                        <p>Gasolina</p>
+                    </div>
+                    <div class="transmision">
+                        <img id="transmision" src="../Assets/alquilar_coche/iconos/transmision manual 1.svg" alt="">
+                        <p>Manual</p>
+                    </div>
+                    <p class="precio-dias">Precio por 6 días</p>
+                </div>
+                <div class="container-derecho">
+                    <div class="puertas">
+                        <img id="puertas" src="../Assets/alquilar_coche/iconos/puerta de carro 1 2.svg" alt="">
+                        <p>5 Puertas</p>
+                    </div>
+                    <div class="maletas">
+                        <img id="maletas" src="../Assets/alquilar_coche/iconos/maleta 1.svg" alt="">
+                        <p>3 Maletas</p>
+                    </div>
+                    <div class="aire-acondicionado">
+                        <img id="aire-acondicionado" src="../Assets/alquilar_coche/iconos/nieve 1.svg" alt="">
+                        <p>Aire acondicionado</p>
+                    </div>
+                    <div class="container-precio-flecha">
+                        <p class="precio">COP <strong>1.198.999</strong></p>
+                        <img src="../Assets/compartidos/iconos/next_linea.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-carro">
+            <div class="container-carro-modelo">
+                <h2>Nissan Frontier Pro</h2>
+                <img src="../Assets/alquilar_coche/nissann forntier pro 1.svg" alt="">
+            </div>
+            <div class="container-info-carro">
+                <div class="container-izquierdo">
+                    <div class="asientos">
+                        <img id="asientos" src="../Assets/alquilar_coche/iconos/user cuadrado.svg" alt="">
+                        <p>4 Asientos</p>
+                    </div>
+                    <div class="combustible">
+                        <img id="combustible" src="../Assets/alquilar_coche/iconos/gasolinera.svg" alt="">
+                        <p>Diesel</p>
+                    </div>
+                    <div class="transmision">
+                        <img id="transmision" src="../Assets/alquilar_coche/iconos/transmision manual 1.svg" alt="">
+                        <p>Manual</p>
+                    </div>
+                    <p class="precio-dias">Precio por 6 días</p>
+                </div>
+                <div class="container-derecho">
+                    <div class="puertas">
+                        <img id="puertas" src="../Assets/alquilar_coche/iconos/puerta de carro 1 2.svg" alt="">
+                        <p>4 Puertas</p>
+                    </div>
+                    <div class="maletas">
+                        <img id="maletas" src="../Assets/alquilar_coche/iconos/maleta 1.svg" alt="">
+                        <p>5 Maletas</p>
+                    </div>
+                    <div class="aire-acondicionado">
+                        <img id="aire-acondicionado" src="../Assets/alquilar_coche/iconos/nieve 1.svg" alt="">
+                        <p>Aire acondicionado</p>
+                    </div>
+                    <div class="container-precio-flecha">
+                        <p class="precio">COP <strong>1.876.976</strong></p>
+                        <img src="../Assets/compartidos/iconos/next_linea.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-carro">
+            <div class="container-carro-modelo">
+                <h2>Peugeut 3008</h2>
+                <img src="../Assets/alquilar_coche/Peugeot 3008 1.svg" alt="">
+            </div>
+            <div class="container-info-carro">
+                <div class="container-izquierdo">
+                    <div class="asientos">
+                        <img id="asientos" src="../Assets/alquilar_coche/iconos/user cuadrado.svg" alt="">
+                        <p>5 Asientos</p>
+                    </div>
+                    <div class="combustible">
+                        <img id="combustible" src="../Assets/alquilar_coche/iconos/gasolinera.svg" alt="">
+                        <p>Gasolina</p>
+                    </div>
+                    <div class="transmision">
+                        <img id="transmision" src="../Assets/alquilar_coche/iconos/transmision manual 1.svg" alt="">
+                        <p>Automatíco</p>
+                    </div>
+                    <p class="precio-dias">Precio por 6 días</p>
+                </div>
+                <div class="container-derecho">
+                    <div class="puertas">
+                        <img id="puertas" src="../Assets/alquilar_coche/iconos/puerta de carro 1 2.svg" alt="">
+                        <p>5 Puertas</p>
+                    </div>
+                    <div class="maletas">
+                        <img id="maletas" src="../Assets/alquilar_coche/iconos/maleta 1.svg" alt="">
+                        <p>2 Maletas</p>
+                    </div>
+                    <div class="aire-acondicionado">
+                        <img id="aire-acondicionado" src="../Assets/alquilar_coche/iconos/nieve 1.svg" alt="">
+                        <p>Aire acondicionado</p>
+                    </div>
+                    <div class="container-precio-flecha">
+                        <p class="precio">COP <strong>898.989</strong></p>
+                        <img src="../Assets/compartidos/iconos/next_linea.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-carro">
+            <div class="container-carro-modelo">
+                <h2>Audi Q3</h2>
+                <img src="../Assets/alquilar_coche/audi-q3 1.svg" alt="">
+            </div>
+            <div class="container-info-carro">
+                <div class="container-izquierdo">
+                    <div class="asientos">
+                        <img id="asientos" src="../Assets/alquilar_coche/iconos/user cuadrado.svg" alt="">
+                        <p>5 Asientos</p>
+                    </div>
+                    <div class="combustible">
+                        <img id="combustible" src="../Assets/alquilar_coche/iconos/gasolinera.svg" alt="">
+                        <p>Gasolina</p>
+                    </div>
+                    <div class="transmision">
+                        <img id="transmision" src="../Assets/alquilar_coche/iconos/transmision manual 1.svg" alt="">
+                        <p>Automatíco</p>
+                    </div>
+                    <p class="precio-dias">Precio por 6 días</p>
+                </div>
+                <div class="container-derecho">
+                    <div class="puertas">
+                        <img id="puertas" src="../Assets/alquilar_coche/iconos/puerta de carro 1 2.svg" alt="">
+                        <p>5 Puertas</p>
+                    </div>
+                    <div class="maletas">
+                        <img id="maletas" src="../Assets/alquilar_coche/iconos/maleta 1.svg" alt="">
+                        <p>3 Maletas</p>
+                    </div>
+                    <div class="aire-acondicionado">
+                        <img id="aire-acondicionado" src="../Assets/alquilar_coche/iconos/nieve 1.svg" alt="">
+                        <p>Aire acondicionado</p>
+                    </div>
+                    <div class="container-precio-flecha">
+                        <p class="precio">COP <strong>998.999</strong></p>
+                        <img src="../Assets/compartidos/iconos/next_linea.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-carro">
+            <div class="container-carro-modelo">
+                <h2>Volkswagen polo</h2>
+                <img src="../Assets/alquilar_coche/volkswagen polo 1.svg" alt="">
+            </div>
+            <div class="container-info-carro">
+                <div class="container-izquierdo">
+                    <div class="asientos">
+                        <img id="asientos" src="../Assets/alquilar_coche/iconos/user cuadrado.svg" alt="">
+                        <p>5 Asientos</p>
+                    </div>
+                    <div class="combustible">
+                        <img id="combustible" src="../Assets/alquilar_coche/iconos/gasolinera.svg" alt="">
+                        <p>Gasolina</p>
+                    </div>
+                    <div class="transmision">
+                        <img id="transmision" src="../Assets/alquilar_coche/iconos/transmision manual 1.svg" alt="">
+                        <p>Manual</p>
+                    </div>
+                    <p class="precio-dias">Precio por 6 días</p>
+                </div>
+                <div class="container-derecho">
+                    <div class="puertas">
+                        <img id="puertas" src="../Assets/alquilar_coche/iconos/puerta de carro 1 2.svg" alt="">
+                        <p>5 Puertas</p>
+                    </div>
+                    <div class="maletas">
+                        <img id="maletas" src="../Assets/alquilar_coche/iconos/maleta 1.svg" alt="">
+                        <p>3 Maletas</p>
+                    </div>
+                    <div class="aire-acondicionado">
+                        <img id="aire-acondicionado" src="../Assets/alquilar_coche/iconos/nieve 1.svg" alt="">
+                        <p>Aire acondicionado</p>
+                    </div>
+                    <div class="container-precio-flecha">
+                        <p class="precio">COP <strong>798.889</strong></p>
+                        <img src="../Assets/compartidos/iconos/next_linea.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
